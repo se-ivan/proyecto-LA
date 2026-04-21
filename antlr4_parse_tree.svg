@@ -1,0 +1,670 @@
+<svg width="3891.8" height="1602.7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><line x1="1184.125" y1="7.5" x2="45.75" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="45.75" y1="39.5" x2="45.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="45.75" y1="71.5" x2="8.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="45.75" y1="71.5" x2="30.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="45.75" y1="71.5" x2="83.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="83.5" y1="103.5" x2="83.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="83.5" y1="135.5" x2="83.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="83.5" y1="167.5" x2="83.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="114.0" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="182.25" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="182.25" y1="39.5" x2="182.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="182.25" y1="71.5" x2="142.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="182.25" y1="71.5" x2="169.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="182.25" y1="71.5" x2="222.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="222.5" y1="103.5" x2="222.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="222.5" y1="135.5" x2="222.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="222.5" y1="167.5" x2="222.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="263.75" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="345.25" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="345.25" y1="39.5" x2="345.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="345.25" y1="71.5" x2="304.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="345.25" y1="71.5" x2="333.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="345.25" y1="71.5" x2="386.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="386.0" y1="103.5" x2="301.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="301.5" y1="135.5" x2="301.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="301.5" y1="167.5" x2="301.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="386.0" y1="103.5" x2="386.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="386.0" y1="103.5" x2="470.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="470.5" y1="135.5" x2="470.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="470.5" y1="167.5" x2="470.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="837.625" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="1330.0" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="39.5" x2="1330.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="513.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="571.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="619.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="619.0" y1="103.5" x2="551.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="551.0" y1="135.5" x2="551.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="551.0" y1="167.5" x2="551.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="551.0" y1="199.5" x2="551.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="619.0" y1="103.5" x2="619.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="619.0" y1="103.5" x2="687.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="687.0" y1="135.5" x2="687.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="687.0" y1="167.5" x2="687.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="687.0" y1="199.5" x2="687.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="704.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="832.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="934.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="934.0" y1="103.5" x2="934.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="934.0" y1="135.5" x2="894.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="934.0" y1="135.5" x2="920.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="934.0" y1="135.5" x2="973.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="973.75" y1="167.5" x2="889.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="889.25" y1="199.5" x2="889.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="889.25" y1="231.5" x2="889.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="973.75" y1="167.5" x2="973.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="973.75" y1="167.5" x2="1058.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1058.25" y1="199.5" x2="1058.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1058.25" y1="231.5" x2="1058.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="1214.125" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="1494.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="103.5" x2="1494.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1085.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1140.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1206.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1206.25" y1="167.5" x2="1206.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1206.25" y1="199.5" x2="1206.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1206.25" y1="231.5" x2="1116.75" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1116.75" y1="263.5" x2="1116.75" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1116.75" y1="295.5" x2="1116.75" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1116.75" y1="327.5" x2="1116.75" y2="352.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1206.25" y1="231.5" x2="1206.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1206.25" y1="231.5" x2="1295.75" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1295.75" y1="263.5" x2="1295.75" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1295.75" y1="295.5" x2="1295.75" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1295.75" y1="327.5" x2="1295.75" y2="352.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1309.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1437.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1538.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1538.75" y1="167.5" x2="1538.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1538.75" y1="199.5" x2="1499.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1538.75" y1="199.5" x2="1525.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1538.75" y1="199.5" x2="1578.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1578.5" y1="231.5" x2="1494.0" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.0" y1="263.5" x2="1494.0" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.0" y1="295.5" x2="1494.0" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1578.5" y1="231.5" x2="1578.5" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1578.5" y1="231.5" x2="1663.0" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1663.0" y1="263.5" x2="1663.0" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1663.0" y1="295.5" x2="1663.0" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1662.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1786.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1786.25" y1="167.5" x2="1786.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1786.25" y1="199.5" x2="1746.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1786.25" y1="199.5" x2="1773.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1786.25" y1="199.5" x2="1826.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1826.5" y1="231.5" x2="1742.0" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1742.0" y1="263.5" x2="1742.0" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1742.0" y1="295.5" x2="1742.0" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1826.5" y1="231.5" x2="1826.5" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1826.5" y1="231.5" x2="1911.0" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1911.0" y1="263.5" x2="1911.0" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1911.0" y1="295.5" x2="1911.0" y2="320.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1828.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1494.25" y1="135.5" x2="1903.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="1761.875" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="2029.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2029.5" y1="103.5" x2="2029.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2029.5" y1="135.5" x2="1987.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2029.5" y1="135.5" x2="2018.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2029.5" y1="135.5" x2="2071.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2071.25" y1="167.5" x2="2071.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2071.25" y1="199.5" x2="2071.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2071.25" y1="231.5" x2="2071.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="2071.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1330.0" y1="71.5" x2="2146.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="1788.5" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="2247.0" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2247.0" y1="39.5" x2="2247.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2247.0" y1="71.5" x2="2247.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2247.0" y1="103.5" x2="2173.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2173.5" y1="135.5" x2="2173.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2173.5" y1="167.5" x2="2173.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2173.5" y1="199.5" x2="2173.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2173.5" y1="231.5" x2="2173.5" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2247.0" y1="103.5" x2="2247.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2247.0" y1="103.5" x2="2320.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2320.5" y1="135.5" x2="2320.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2320.5" y1="167.5" x2="2320.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2320.5" y1="199.5" x2="2320.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2320.5" y1="231.5" x2="2320.5" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="2290.0" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1184.125" y1="7.5" x2="2322.5" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<rect x="912.5" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="914" y="137" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="17.25" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="19" y="41" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="1078.25" y="256.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1080" y="265" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="2135.0" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2137" y="169" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="160.75" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="162" y="73" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="0.0" y="96.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2" y="105" style="font-family:sans-serif;font-size:10px;">
+xp
+</text>
+<rect x="905.5" y="96.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="907" y="105" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="2035.25" y="224.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2037" y="233" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="24.25" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="26" y="73" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="187.5" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="189" y="137" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1784.0" y="256.0" width="85.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1786" y="265" style="font-family:sans-serif;font-size:10px;">
+ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥
+</text>
+<rect x="2085.0" y="96.0" width="123.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2087" y="105" style="font-family:sans-serif;font-size:10px;">
+⚍リᕊ∷ᒷᖋ·ǀ·╎リ┤⎽ᒷリ↸
+</text>
+<rect x="537.0" y="224.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="539" y="233" style="font-family:sans-serif;font-size:10px;">
+base
+</text>
+<rect x="1182.75" y="224.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1184" y="233" style="font-family:sans-serif;font-size:10px;">
+judgment
+</text>
+<rect x="2010.75" y="160.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2012" y="169" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="679.0" y="224.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="681" y="233" style="font-family:sans-serif;font-size:10px;">
+10
+</text>
+<rect x="2204.0" y="128.0" width="86.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2206" y="137" style="font-family:sans-serif;font-size:10px;">
+ᔮ⍑ᖋリリᒷ|:╎リ┤
+</text>
+<rect x="153.75" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="155" y="41" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="290.5" y="96.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="292" y="105" style="font-family:sans-serif;font-size:10px;">
+base
+</text>
+<rect x="186.5" y="160.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="188" y="169" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="516.0" y="160.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="518" y="169" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1458.0" y="288.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1460" y="297" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="266.5" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="268" y="137" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1465.75" y="96.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1467" y="105" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="465.5" y="192.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="467" y="201" style="font-family:sans-serif;font-size:10px;">
+5
+</text>
+<rect x="595.5" y="96.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="597" y="105" style="font-family:sans-serif;font-size:10px;">
+judgment
+</text>
+<rect x="931.25" y="192.0" width="85.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="933" y="201" style="font-family:sans-serif;font-size:10px;">
+ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥
+</text>
+<rect x="347.5" y="96.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="349" y="105" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1906.0" y="320.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1908" y="329" style="font-family:sans-serif;font-size:10px;">
+1
+</text>
+<rect x="1207.625" y="96.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1209" y="105" style="font-family:sans-serif;font-size:10px;">
+🔹
+</text>
+<rect x="1628.0" y="256.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1630" y="265" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1054.25" y="160.0" width="62.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1056" y="169" style="font-family:sans-serif;font-size:10px;">
+╎リ⎓╎リ╎ℸ||
+</text>
+<rect x="1162.25" y="256.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1164" y="265" style="font-family:sans-serif;font-size:10px;">
+·ǀ·リᒍᔮ·ǀ·ᕊᖋᔮ·ǀ·
+</text>
+<rect x="1755.375" y="96.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1757" y="105" style="font-family:sans-serif;font-size:10px;">
+🔹
+</text>
+<rect x="1841.75" y="160.0" width="123.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1843" y="169" style="font-family:sans-serif;font-size:10px;">
+⚍リᕊ∷ᒷᖋ·ǀ·╎リ┤⎽ᒷリ↸
+</text>
+<rect x="75.5" y="192.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="77" y="201" style="font-family:sans-serif;font-size:10px;">
+10
+</text>
+<rect x="2032.75" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2034" y="169" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="2001.0" y="96.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2003" y="105" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="830.125" y="32.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="832" y="41" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="2284.5" y="224.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2286" y="233" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="23.0" y="96.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="25" y="105" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1658.0" y="320.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1660" y="329" style="font-family:sans-serif;font-size:10px;">
+2
+</text>
+<rect x="316.75" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="318" y="41" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="256.25" y="32.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="258" y="41" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1174.25" y="192.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1176" y="201" style="font-family:sans-serif;font-size:10px;">
+signal_chain
+</text>
+<rect x="1287.75" y="352.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1289" y="361" style="font-family:sans-serif;font-size:10px;">
+20
+</text>
+<rect x="2036.25" y="192.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2038" y="201" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="2008.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2010" y="137" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="913.25" y="160.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="915" y="169" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1540.0" y="224.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1542" y="233" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1292.5" y="64.0" width="75.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1294" y="73" style="font-family:sans-serif;font-size:10px;">
+redstone_logic
+</text>
+<rect x="217.5" y="192.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="219" y="201" style="font-family:sans-serif;font-size:10px;">
+1
+</text>
+<rect x="2137.5" y="224.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2139" y="233" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="2282.5" y="32.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2284" y="41" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="323.75" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="325" y="73" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="106.5" y="32.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="108" y="41" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1045.25" y="256.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1047" y="265" style="font-family:sans-serif;font-size:10px;">
+nivel
+</text>
+<rect x="1821.75" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1823" y="169" style="font-family:sans-serif;font-size:10px;">
+🔹
+</text>
+<rect x="1165.25" y="160.0" width="82.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1167" y="169" style="font-family:sans-serif;font-size:10px;">
+redstone_circuit
+</text>
+<rect x="2297.0" y="128.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2299" y="137" style="font-family:sans-serif;font-size:10px;">
+judgment
+</text>
+<rect x="1875.0" y="288.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1877" y="297" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="435.5" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="437" y="137" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1371.25" y="160.0" width="132.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1373" y="169" style="font-family:sans-serif;font-size:10px;">
+⚍リᕊ∷ᒷᖋ·ǀ·╎リ┤⎽ϟᒣᖋ∷ᒣ
+</text>
+<rect x="882.25" y="160.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="884" y="169" style="font-family:sans-serif;font-size:10px;">
+total
+</text>
+<rect x="1764.75" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1766" y="201" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="596.5" y="128.0" width="45.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="598" y="137" style="font-family:sans-serif;font-size:10px;">
+I!⚍リᔮ⍑
+</text>
+<rect x="2138.5" y="192.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2140" y="201" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1656.0" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1658" y="169" style="font-family:sans-serif;font-size:10px;">
+🔹
+</text>
+<rect x="1517.25" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1519" y="201" style="font-family:sans-serif;font-size:10px;">
+enchant
+</text>
+<rect x="45.0" y="96.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="47" y="105" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="553.5" y="96.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="555" y="105" style="font-family:sans-serif;font-size:10px;">
+|:⚍∷ᒷ
+</text>
+<rect x="1455.25" y="128.0" width="78.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1457" y="137" style="font-family:sans-serif;font-size:10px;">
+redstone_clock
+</text>
+<rect x="129.0" y="96.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="131" y="105" style="font-family:sans-serif;font-size:10px;">
+nivel
+</text>
+<rect x="875.25" y="256.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="877" y="265" style="font-family:sans-serif;font-size:10px;">
+base
+</text>
+<rect x="512.5" y="128.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="514" y="137" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="2218.5" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2220" y="41" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="1757.75" y="160.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1759" y="169" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="293.5" y="192.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="295" y="201" style="font-family:sans-serif;font-size:10px;">
+xp
+</text>
+<rect x="1259.75" y="320.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1261" y="329" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="2059.25" y="256.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2061" y="265" style="font-family:sans-serif;font-size:10px;">
+total
+</text>
+<rect x="343.5" y="128.0" width="85.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="345" y="137" style="font-family:sans-serif;font-size:10px;">
+ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥
+</text>
+<rect x="1081.75" y="288.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1083" y="297" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1971.75" y="160.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1973" y="169" style="font-family:sans-serif;font-size:10px;">
+salida
+</text>
+<rect x="651.0" y="192.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="653" y="201" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="1729.0" y="320.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1731" y="329" style="font-family:sans-serif;font-size:10px;">
+nivel
+</text>
+<rect x="2149.0" y="256.0" width="49.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2151" y="265" style="font-family:sans-serif;font-size:10px;">
+resultado
+</text>
+<rect x="2206.0" y="64.0" width="82.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2208" y="73" style="font-family:sans-serif;font-size:10px;">
+redstone_circuit
+</text>
+<rect x="162.0" y="96.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="164" y="105" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1123.25" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1125" y="169" style="font-family:sans-serif;font-size:10px;">
+|:⚍∷ᒷ
+</text>
+<rect x="1627.0" y="288.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1629" y="297" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="1781.0" y="32.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1783" y="41" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="2215.0" y="96.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2217" y="105" style="font-family:sans-serif;font-size:10px;">
+signal_chain
+</text>
+<rect x="1254.25" y="160.0" width="110.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1256" y="169" style="font-family:sans-serif;font-size:10px;">
+|:⚍ᔮ·ǀ·⎽ᒍ⎓⎽ᒣ⍑ᒷ⎽ϟᒷᖋ
+</text>
+<rect x="184.0" y="96.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="186" y="105" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1733.0" y="224.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1735" y="233" style="font-family:sans-serif;font-size:10px;">
+nivel
+</text>
+<rect x="1487.0" y="224.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1489" y="233" style="font-family:sans-serif;font-size:10px;">
+total
+</text>
+<rect x="2065.0" y="96.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2067" y="105" style="font-family:sans-serif;font-size:10px;">
+🔹
+</text>
+<rect x="2285.5" y="192.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2287" y="201" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1482.0" y="320.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1484" y="329" style="font-family:sans-serif;font-size:10px;">
+total
+</text>
+<rect x="1158.625" y="0.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1160" y="9" style="font-family:sans-serif;font-size:10px;">
+bookshelf
+</text>
+<rect x="1257.25" y="256.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1259" y="265" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1876.0" y="256.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1878" y="265" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="854.25" y="192.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="856" y="201" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1706.0" y="288.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1708" y="297" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="1788.0" y="224.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1790" y="233" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1260.75" y="288.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1262" y="297" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="515.0" y="192.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="517" y="201" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="649.5" y="96.0" width="110.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="651" y="105" style="font-family:sans-serif;font-size:10px;">
+|:⚍ᔮ·ǀ·⎽ᒍ⎓⎽ᒣ⍑ᒷ⎽ϟᒷᖋ
+</text>
+<rect x="1022.25" y="224.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1024" y="233" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="480.5" y="96.0" width="66.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="482" y="105" style="font-family:sans-serif;font-size:10px;">
+⎓ᒍ∷ᒣ⚍リᒷ
+</text>
+<rect x="1510.25" y="160.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1512" y="169" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="2307.5" y="256.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2309" y="265" style="font-family:sans-serif;font-size:10px;">
+nivel
+</text>
+<rect x="47.5" y="160.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="49" y="169" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="325.5" y="96.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="327" y="105" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="48.5" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="50" y="137" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1766.0" y="224.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1768" y="233" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1301.5" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1303" y="41" style="font-family:sans-serif;font-size:10px;">
+enchanting
+</text>
+<rect x="2304.5" y="32.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2306" y="41" style="font-family:sans-serif;font-size:10px;">
+&lt;EOF&gt;
+</text>
+<rect x="1536.0" y="256.0" width="85.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1538" y="265" style="font-family:sans-serif;font-size:10px;">
+ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥
+</text>
+<rect x="1104.75" y="352.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1106" y="361" style="font-family:sans-serif;font-size:10px;">
+total
+</text>
+<rect x="853.25" y="224.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="855" y="233" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="652.0" y="160.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="654" y="169" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1518.0" y="224.0" width="15.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1520" y="233" style="font-family:sans-serif;font-size:10px;">
+🌀
+</text>
+<rect x="1023.25" y="192.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1025" y="201" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="2150.0" y="128.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2152" y="137" style="font-family:sans-serif;font-size:10px;">
+judgment
+</text>
+<rect x="2282.0" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2284" y="169" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="766.5" y="96.0" width="132.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="768" y="105" style="font-family:sans-serif;font-size:10px;">
+⚍リᕊ∷ᒷᖋ·ǀ·╎リ┤⎽ϟᒣᖋ∷ᒣ
+</text>
+<rect x="265.5" y="160.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="267" y="169" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="434.5" y="160.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="436" y="169" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="935.25" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="937" y="169" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+<rect x="1080.75" y="320.0" width="72.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1082" y="329" style="font-family:sans-serif;font-size:10px;">
+inventory_slot
+</text>
+<rect x="1459.0" y="256.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1461" y="265" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="1707.0" y="256.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1709" y="265" style="font-family:sans-serif;font-size:10px;">
+resource_pile
+</text>
+<rect x="648.5" y="128.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="650" y="137" style="font-family:sans-serif;font-size:10px;">
+crafting_recipe
+</text>
+</svg>

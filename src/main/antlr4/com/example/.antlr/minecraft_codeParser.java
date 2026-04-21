@@ -1,4 +1,4 @@
-// Generated from c:/Users/sresm/Documents/Lenguajes y automatas 2/demo/src/main/antlr4/com/example/Language.g4 by ANTLR 4.13.1
+// Generated from c:/Users/sresm/Documents/Lenguajes y automatas 2/demo/src/main/antlr4/com/example/minecraft_code.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
-public class LanguageParser extends Parser {
+public class minecraft_codeParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -90,7 +90,7 @@ public class LanguageParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Language.g4"; }
+	public String getGrammarFileName() { return "minecraft_code.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -101,23 +101,23 @@ public class LanguageParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public LanguageParser(TokenStream input) {
+	public minecraft_codeParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class BookshelfContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(LanguageParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(minecraft_codeParser.EOF, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> APPLY() { return getTokens(LanguageParser.APPLY); }
+		public List<TerminalNode> APPLY() { return getTokens(minecraft_codeParser.APPLY); }
 		public TerminalNode APPLY(int i) {
-			return getToken(LanguageParser.APPLY, i);
+			return getToken(minecraft_codeParser.APPLY, i);
 		}
 		public BookshelfContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -233,23 +233,23 @@ public class LanguageParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Redstone_logicContext extends ParserRuleContext {
-		public TerminalNode FORTUNE() { return getToken(LanguageParser.FORTUNE, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode FORTUNE() { return getToken(minecraft_codeParser.FORTUNE, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public JudgmentContext judgment() {
 			return getRuleContext(JudgmentContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
-		public TerminalNode UNBREAKING_START() { return getToken(LanguageParser.UNBREAKING_START, 0); }
-		public TerminalNode UNBREAKING_END() { return getToken(LanguageParser.UNBREAKING_END, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode UNBREAKING_START() { return getToken(minecraft_codeParser.UNBREAKING_START, 0); }
+		public TerminalNode UNBREAKING_END() { return getToken(minecraft_codeParser.UNBREAKING_END, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(LanguageParser.LAPIS_LAZULI); }
+		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(minecraft_codeParser.LAPIS_LAZULI); }
 		public TerminalNode LAPIS_LAZULI(int i) {
-			return getToken(LanguageParser.LAPIS_LAZULI, i);
+			return getToken(minecraft_codeParser.LAPIS_LAZULI, i);
 		}
 		public Redstone_logicContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -319,23 +319,23 @@ public class LanguageParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Redstone_clockContext extends ParserRuleContext {
-		public TerminalNode INFINITY() { return getToken(LanguageParser.INFINITY, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode INFINITY() { return getToken(minecraft_codeParser.INFINITY, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
-		public TerminalNode UNBREAKING_START() { return getToken(LanguageParser.UNBREAKING_START, 0); }
-		public TerminalNode UNBREAKING_END() { return getToken(LanguageParser.UNBREAKING_END, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode UNBREAKING_START() { return getToken(minecraft_codeParser.UNBREAKING_START, 0); }
+		public TerminalNode UNBREAKING_END() { return getToken(minecraft_codeParser.UNBREAKING_END, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(LanguageParser.LAPIS_LAZULI); }
+		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(minecraft_codeParser.LAPIS_LAZULI); }
 		public TerminalNode LAPIS_LAZULI(int i) {
-			return getToken(LanguageParser.LAPIS_LAZULI, i);
+			return getToken(minecraft_codeParser.LAPIS_LAZULI, i);
 		}
 		public Redstone_clockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -411,9 +411,9 @@ public class LanguageParser extends Parser {
 		public Signal_chainContext signal_chain(int i) {
 			return getRuleContext(Signal_chainContext.class,i);
 		}
-		public List<TerminalNode> IMPALING() { return getTokens(LanguageParser.IMPALING); }
+		public List<TerminalNode> IMPALING() { return getTokens(minecraft_codeParser.IMPALING); }
 		public TerminalNode IMPALING(int i) {
-			return getToken(LanguageParser.IMPALING, i);
+			return getToken(minecraft_codeParser.IMPALING, i);
 		}
 		public Redstone_circuitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -467,9 +467,9 @@ public class LanguageParser extends Parser {
 		public JudgmentContext judgment(int i) {
 			return getRuleContext(JudgmentContext.class,i);
 		}
-		public List<TerminalNode> CHANNELING() { return getTokens(LanguageParser.CHANNELING); }
+		public List<TerminalNode> CHANNELING() { return getTokens(minecraft_codeParser.CHANNELING); }
 		public TerminalNode CHANNELING(int i) {
-			return getToken(LanguageParser.CHANNELING, i);
+			return getToken(minecraft_codeParser.CHANNELING, i);
 		}
 		public Signal_chainContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -523,9 +523,9 @@ public class LanguageParser extends Parser {
 		public Crafting_recipeContext crafting_recipe(int i) {
 			return getRuleContext(Crafting_recipeContext.class,i);
 		}
-		public TerminalNode PUNCH() { return getToken(LanguageParser.PUNCH, 0); }
-		public TerminalNode KNOCKBACK() { return getToken(LanguageParser.KNOCKBACK, 0); }
-		public TerminalNode MENDING() { return getToken(LanguageParser.MENDING, 0); }
+		public TerminalNode PUNCH() { return getToken(minecraft_codeParser.PUNCH, 0); }
+		public TerminalNode KNOCKBACK() { return getToken(minecraft_codeParser.KNOCKBACK, 0); }
+		public TerminalNode MENDING() { return getToken(minecraft_codeParser.MENDING, 0); }
 		public JudgmentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -576,8 +576,8 @@ public class LanguageParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class EnchantContext extends ParserRuleContext {
-		public TerminalNode BOOK() { return getToken(LanguageParser.BOOK, 0); }
-		public TerminalNode APPLY() { return getToken(LanguageParser.APPLY, 0); }
+		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
+		public TerminalNode APPLY() { return getToken(minecraft_codeParser.APPLY, 0); }
 		public Crafting_recipeContext crafting_recipe() {
 			return getRuleContext(Crafting_recipeContext.class,0);
 		}
@@ -637,13 +637,13 @@ public class LanguageParser extends Parser {
 		public Resource_pileContext resource_pile(int i) {
 			return getRuleContext(Resource_pileContext.class,i);
 		}
-		public List<TerminalNode> EFFICIENCY() { return getTokens(LanguageParser.EFFICIENCY); }
+		public List<TerminalNode> EFFICIENCY() { return getTokens(minecraft_codeParser.EFFICIENCY); }
 		public TerminalNode EFFICIENCY(int i) {
-			return getToken(LanguageParser.EFFICIENCY, i);
+			return getToken(minecraft_codeParser.EFFICIENCY, i);
 		}
-		public List<TerminalNode> SHARPNESS() { return getTokens(LanguageParser.SHARPNESS); }
+		public List<TerminalNode> SHARPNESS() { return getTokens(minecraft_codeParser.SHARPNESS); }
 		public TerminalNode SHARPNESS(int i) {
-			return getToken(LanguageParser.SHARPNESS, i);
+			return getToken(minecraft_codeParser.SHARPNESS, i);
 		}
 		public Crafting_recipeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -705,13 +705,13 @@ public class LanguageParser extends Parser {
 		public Inventory_slotContext inventory_slot(int i) {
 			return getRuleContext(Inventory_slotContext.class,i);
 		}
-		public List<TerminalNode> MULTISHOT() { return getTokens(LanguageParser.MULTISHOT); }
+		public List<TerminalNode> MULTISHOT() { return getTokens(minecraft_codeParser.MULTISHOT); }
 		public TerminalNode MULTISHOT(int i) {
-			return getToken(LanguageParser.MULTISHOT, i);
+			return getToken(minecraft_codeParser.MULTISHOT, i);
 		}
-		public List<TerminalNode> PIERCING() { return getTokens(LanguageParser.PIERCING); }
+		public List<TerminalNode> PIERCING() { return getTokens(minecraft_codeParser.PIERCING); }
 		public TerminalNode PIERCING(int i) {
-			return getToken(LanguageParser.PIERCING, i);
+			return getToken(minecraft_codeParser.PIERCING, i);
 		}
 		public Resource_pileContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -767,13 +767,13 @@ public class LanguageParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Inventory_slotContext extends ParserRuleContext {
-		public TerminalNode ENT() { return getToken(LanguageParser.ENT, 0); }
-		public TerminalNode BOOK() { return getToken(LanguageParser.BOOK, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode ENT() { return getToken(minecraft_codeParser.ENT, 0); }
+		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
 		public Inventory_slotContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}

@@ -1,4 +1,5 @@
-// Generated from c:/Users/sresm/Documents/Lenguajes y automatas 2/demo/src/main/antlr4/com/example/Language.g4 by ANTLR 4.13.1
+// Generated from com\example\minecraft_code.g4 by ANTLR 4.9.2
+package com.example;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,9 +9,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
-public class LanguageParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+public class minecraft_codeParser extends Parser {
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -35,15 +36,15 @@ public class LanguageParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'\\u2393\\u148D\\u2237\\u14A3\\u268D\\u30EA\\u14B7'", "'\\u254E\\u30EA\\u2393\\u254E\\u30EA\\u254E\\u2138||'", 
-			"'\\u268D\\u30EA\\u154A\\u2237\\u14B7\\u158B\\u00B7\\u01C0\\u00B7\\u254E\\u30EA\\u2524\\u23BD\\u03DF\\u14A3\\u158B\\u2237\\u14A3'", 
-			"'\\u268D\\u30EA\\u154A\\u2237\\u14B7\\u158B\\u00B7\\u01C0\\u00B7\\u254E\\u30EA\\u2524\\u23BD\\u14B7\\u30EA\\u21B8'", 
-			"'\\u03DE\\u2351\\u158B\\u2237i!\\u30EA\\u14B7\\u03DF\\u03DF'", "'\\u14B2\\u268D|:\\u14A3\\u254E\\u03DF\\u2351\\u148D\\u14A3'", 
-			"'I!\\u254E\\u14B7\\u2237\\u152E\\u254E\\u30EA\\u2524'", "'\\u14B7\\u2393\\u2393\\u254E\\u152E\\u254E\\u14B7\\u30EA\\u152E\\u0965'", 
-			"'|:\\u268D\\u2237\\u14B7'", "'|:\\u268D\\u152E\\u00B7\\u01C0\\u00B7\\u23BD\\u148D\\u2393\\u23BD\\u14A3\\u2351\\u14B7\\u23BD\\u03DF\\u14B7\\u158B'", 
-			"'\\uD83C\uDF00'", "'\\uD83D\uDD39'", "'\\u00B7\\u01C0\\u00B7\\u30EA\\u148D\\u152E\\u00B7\\u01C0\\u00B7\\u154A\\u158B\\u152E\\u00B7\\u01C0\\u00B7'", 
-			"'I!\\u268D\\u30EA\\u152E\\u2351'", "'\\u14B2\\u14B7\\u30EA\\u21B8\\u254E\\u30EA\\u2524'", 
-			"'\\u254E\\u14B2i!\\u158B|:\\u254E\\u30EA\\u2524'", "'\\u152E\\u2351\\u158B\\u30EA\\u30EA\\u14B7|:\\u254E\\u30EA\\u2524'"
+			null, "'\u2393\u148D\u2237\u14A3\u268D\u30EA\u14B7'", "'\u254E\u30EA\u2393\u254E\u30EA\u254E\u2138||'", 
+			"'\u268D\u30EA\u154A\u2237\u14B7\u158B\u00B7\u01C0\u00B7\u254E\u30EA\u2524\u23BD\u03DF\u14A3\u158B\u2237\u14A3'", 
+			"'\u268D\u30EA\u154A\u2237\u14B7\u158B\u00B7\u01C0\u00B7\u254E\u30EA\u2524\u23BD\u14B7\u30EA\u21B8'", 
+			"'\u03DE\u2351\u158B\u2237i!\u30EA\u14B7\u03DF\u03DF'", "'\u14B2\u268D|:\u14A3\u254E\u03DF\u2351\u148D\u14A3'", 
+			"'I!\u254E\u14B7\u2237\u152E\u254E\u30EA\u2524'", "'\u14B7\u2393\u2393\u254E\u152E\u254E\u14B7\u30EA\u152E\u0965'", 
+			"'|:\u268D\u2237\u14B7'", "'|:\u268D\u152E\u00B7\u01C0\u00B7\u23BD\u148D\u2393\u23BD\u14A3\u2351\u14B7\u23BD\u03DF\u14B7\u158B'", 
+			"'\uD83C\uDF00'", "'\uD83D\uDD39'", "'\u00B7\u01C0\u00B7\u30EA\u148D\u152E\u00B7\u01C0\u00B7\u154A\u158B\u152E\u00B7\u01C0\u00B7'", 
+			"'I!\u268D\u30EA\u152E\u2351'", "'\u14B2\u14B7\u30EA\u21B8\u254E\u30EA\u2524'", 
+			"'\u254E\u14B2i!\u158B|:\u254E\u30EA\u2524'", "'\u152E\u2351\u158B\u30EA\u30EA\u14B7|:\u254E\u30EA\u2524'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -90,7 +91,7 @@ public class LanguageParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Language.g4"; }
+	public String getGrammarFileName() { return "minecraft_code.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -101,28 +102,40 @@ public class LanguageParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public LanguageParser(TokenStream input) {
+	public minecraft_codeParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class BookshelfContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(LanguageParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(minecraft_codeParser.EOF, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> APPLY() { return getTokens(LanguageParser.APPLY); }
+		public List<TerminalNode> APPLY() { return getTokens(minecraft_codeParser.APPLY); }
 		public TerminalNode APPLY(int i) {
-			return getToken(LanguageParser.APPLY, i);
+			return getToken(minecraft_codeParser.APPLY, i);
 		}
 		public BookshelfContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_bookshelf; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterBookshelf(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitBookshelf(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitBookshelf(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final BookshelfContext bookshelf() throws RecognitionException {
@@ -147,7 +160,7 @@ public class LanguageParser extends Parser {
 				setState(27); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 786950L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
 			setState(29);
 			match(EOF);
 			}
@@ -163,7 +176,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class EnchantingContext extends ParserRuleContext {
 		public EnchantContext enchant() {
 			return getRuleContext(EnchantContext.class,0);
@@ -181,6 +193,19 @@ public class LanguageParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enchanting; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterEnchanting(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitEnchanting(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitEnchanting(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final EnchantingContext enchanting() throws RecognitionException {
@@ -231,30 +256,42 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Redstone_logicContext extends ParserRuleContext {
-		public TerminalNode FORTUNE() { return getToken(LanguageParser.FORTUNE, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode FORTUNE() { return getToken(minecraft_codeParser.FORTUNE, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public JudgmentContext judgment() {
 			return getRuleContext(JudgmentContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
-		public TerminalNode UNBREAKING_START() { return getToken(LanguageParser.UNBREAKING_START, 0); }
-		public TerminalNode UNBREAKING_END() { return getToken(LanguageParser.UNBREAKING_END, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode UNBREAKING_START() { return getToken(minecraft_codeParser.UNBREAKING_START, 0); }
+		public TerminalNode UNBREAKING_END() { return getToken(minecraft_codeParser.UNBREAKING_END, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(LanguageParser.LAPIS_LAZULI); }
+		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(minecraft_codeParser.LAPIS_LAZULI); }
 		public TerminalNode LAPIS_LAZULI(int i) {
-			return getToken(LanguageParser.LAPIS_LAZULI, i);
+			return getToken(minecraft_codeParser.LAPIS_LAZULI, i);
 		}
 		public Redstone_logicContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_redstone_logic; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterRedstone_logic(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitRedstone_logic(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitRedstone_logic(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Redstone_logicContext redstone_logic() throws RecognitionException {
@@ -301,7 +338,7 @@ public class LanguageParser extends Parser {
 				setState(51); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 786950L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
 			setState(53);
 			match(UNBREAKING_END);
 			}
@@ -317,30 +354,42 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Redstone_clockContext extends ParserRuleContext {
-		public TerminalNode INFINITY() { return getToken(LanguageParser.INFINITY, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode INFINITY() { return getToken(minecraft_codeParser.INFINITY, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
-		public TerminalNode UNBREAKING_START() { return getToken(LanguageParser.UNBREAKING_START, 0); }
-		public TerminalNode UNBREAKING_END() { return getToken(LanguageParser.UNBREAKING_END, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode UNBREAKING_START() { return getToken(minecraft_codeParser.UNBREAKING_START, 0); }
+		public TerminalNode UNBREAKING_END() { return getToken(minecraft_codeParser.UNBREAKING_END, 0); }
 		public List<EnchantingContext> enchanting() {
 			return getRuleContexts(EnchantingContext.class);
 		}
 		public EnchantingContext enchanting(int i) {
 			return getRuleContext(EnchantingContext.class,i);
 		}
-		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(LanguageParser.LAPIS_LAZULI); }
+		public List<TerminalNode> LAPIS_LAZULI() { return getTokens(minecraft_codeParser.LAPIS_LAZULI); }
 		public TerminalNode LAPIS_LAZULI(int i) {
-			return getToken(LanguageParser.LAPIS_LAZULI, i);
+			return getToken(minecraft_codeParser.LAPIS_LAZULI, i);
 		}
 		public Redstone_clockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_redstone_clock; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterRedstone_clock(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitRedstone_clock(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitRedstone_clock(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Redstone_clockContext redstone_clock() throws RecognitionException {
@@ -387,7 +436,7 @@ public class LanguageParser extends Parser {
 				setState(69); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 786950L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
 			setState(71);
 			match(UNBREAKING_END);
 			}
@@ -403,7 +452,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Redstone_circuitContext extends ParserRuleContext {
 		public List<Signal_chainContext> signal_chain() {
 			return getRuleContexts(Signal_chainContext.class);
@@ -411,14 +459,27 @@ public class LanguageParser extends Parser {
 		public Signal_chainContext signal_chain(int i) {
 			return getRuleContext(Signal_chainContext.class,i);
 		}
-		public List<TerminalNode> IMPALING() { return getTokens(LanguageParser.IMPALING); }
+		public List<TerminalNode> IMPALING() { return getTokens(minecraft_codeParser.IMPALING); }
 		public TerminalNode IMPALING(int i) {
-			return getToken(LanguageParser.IMPALING, i);
+			return getToken(minecraft_codeParser.IMPALING, i);
 		}
 		public Redstone_circuitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_redstone_circuit; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterRedstone_circuit(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitRedstone_circuit(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitRedstone_circuit(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Redstone_circuitContext redstone_circuit() throws RecognitionException {
@@ -459,7 +520,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Signal_chainContext extends ParserRuleContext {
 		public List<JudgmentContext> judgment() {
 			return getRuleContexts(JudgmentContext.class);
@@ -467,14 +527,27 @@ public class LanguageParser extends Parser {
 		public JudgmentContext judgment(int i) {
 			return getRuleContext(JudgmentContext.class,i);
 		}
-		public List<TerminalNode> CHANNELING() { return getTokens(LanguageParser.CHANNELING); }
+		public List<TerminalNode> CHANNELING() { return getTokens(minecraft_codeParser.CHANNELING); }
 		public TerminalNode CHANNELING(int i) {
-			return getToken(LanguageParser.CHANNELING, i);
+			return getToken(minecraft_codeParser.CHANNELING, i);
 		}
 		public Signal_chainContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_signal_chain; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterSignal_chain(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitSignal_chain(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitSignal_chain(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Signal_chainContext signal_chain() throws RecognitionException {
@@ -515,7 +588,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class JudgmentContext extends ParserRuleContext {
 		public List<Crafting_recipeContext> crafting_recipe() {
 			return getRuleContexts(Crafting_recipeContext.class);
@@ -523,13 +595,26 @@ public class LanguageParser extends Parser {
 		public Crafting_recipeContext crafting_recipe(int i) {
 			return getRuleContext(Crafting_recipeContext.class,i);
 		}
-		public TerminalNode PUNCH() { return getToken(LanguageParser.PUNCH, 0); }
-		public TerminalNode KNOCKBACK() { return getToken(LanguageParser.KNOCKBACK, 0); }
-		public TerminalNode MENDING() { return getToken(LanguageParser.MENDING, 0); }
+		public TerminalNode PUNCH() { return getToken(minecraft_codeParser.PUNCH, 0); }
+		public TerminalNode KNOCKBACK() { return getToken(minecraft_codeParser.KNOCKBACK, 0); }
+		public TerminalNode MENDING() { return getToken(minecraft_codeParser.MENDING, 0); }
 		public JudgmentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_judgment; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterJudgment(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitJudgment(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitJudgment(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final JudgmentContext judgment() throws RecognitionException {
@@ -544,11 +629,11 @@ public class LanguageParser extends Parser {
 			setState(92);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 57344L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << KNOCKBACK) | (1L << PUNCH) | (1L << MENDING))) != 0)) {
 				{
 				setState(90);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 57344L) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << KNOCKBACK) | (1L << PUNCH) | (1L << MENDING))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
 				else {
@@ -574,10 +659,9 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class EnchantContext extends ParserRuleContext {
-		public TerminalNode BOOK() { return getToken(LanguageParser.BOOK, 0); }
-		public TerminalNode APPLY() { return getToken(LanguageParser.APPLY, 0); }
+		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
+		public TerminalNode APPLY() { return getToken(minecraft_codeParser.APPLY, 0); }
 		public Crafting_recipeContext crafting_recipe() {
 			return getRuleContext(Crafting_recipeContext.class,0);
 		}
@@ -588,6 +672,19 @@ public class LanguageParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enchant; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterEnchant(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitEnchant(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitEnchant(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final EnchantContext enchant() throws RecognitionException {
@@ -629,7 +726,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Crafting_recipeContext extends ParserRuleContext {
 		public List<Resource_pileContext> resource_pile() {
 			return getRuleContexts(Resource_pileContext.class);
@@ -637,18 +733,31 @@ public class LanguageParser extends Parser {
 		public Resource_pileContext resource_pile(int i) {
 			return getRuleContext(Resource_pileContext.class,i);
 		}
-		public List<TerminalNode> EFFICIENCY() { return getTokens(LanguageParser.EFFICIENCY); }
+		public List<TerminalNode> EFFICIENCY() { return getTokens(minecraft_codeParser.EFFICIENCY); }
 		public TerminalNode EFFICIENCY(int i) {
-			return getToken(LanguageParser.EFFICIENCY, i);
+			return getToken(minecraft_codeParser.EFFICIENCY, i);
 		}
-		public List<TerminalNode> SHARPNESS() { return getTokens(LanguageParser.SHARPNESS); }
+		public List<TerminalNode> SHARPNESS() { return getTokens(minecraft_codeParser.SHARPNESS); }
 		public TerminalNode SHARPNESS(int i) {
-			return getToken(LanguageParser.SHARPNESS, i);
+			return getToken(minecraft_codeParser.SHARPNESS, i);
 		}
 		public Crafting_recipeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_crafting_recipe; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterCrafting_recipe(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitCrafting_recipe(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitCrafting_recipe(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Crafting_recipeContext crafting_recipe() throws RecognitionException {
@@ -697,7 +806,6 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Resource_pileContext extends ParserRuleContext {
 		public List<Inventory_slotContext> inventory_slot() {
 			return getRuleContexts(Inventory_slotContext.class);
@@ -705,18 +813,31 @@ public class LanguageParser extends Parser {
 		public Inventory_slotContext inventory_slot(int i) {
 			return getRuleContext(Inventory_slotContext.class,i);
 		}
-		public List<TerminalNode> MULTISHOT() { return getTokens(LanguageParser.MULTISHOT); }
+		public List<TerminalNode> MULTISHOT() { return getTokens(minecraft_codeParser.MULTISHOT); }
 		public TerminalNode MULTISHOT(int i) {
-			return getToken(LanguageParser.MULTISHOT, i);
+			return getToken(minecraft_codeParser.MULTISHOT, i);
 		}
-		public List<TerminalNode> PIERCING() { return getTokens(LanguageParser.PIERCING); }
+		public List<TerminalNode> PIERCING() { return getTokens(minecraft_codeParser.PIERCING); }
 		public TerminalNode PIERCING(int i) {
-			return getToken(LanguageParser.PIERCING, i);
+			return getToken(minecraft_codeParser.PIERCING, i);
 		}
 		public Resource_pileContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resource_pile; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterResource_pile(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitResource_pile(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitResource_pile(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Resource_pileContext resource_pile() throws RecognitionException {
@@ -765,19 +886,31 @@ public class LanguageParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class Inventory_slotContext extends ParserRuleContext {
-		public TerminalNode ENT() { return getToken(LanguageParser.ENT, 0); }
-		public TerminalNode BOOK() { return getToken(LanguageParser.BOOK, 0); }
-		public TerminalNode LURE() { return getToken(LanguageParser.LURE, 0); }
+		public TerminalNode ENT() { return getToken(minecraft_codeParser.ENT, 0); }
+		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
+		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode LUCK_OF_THE_SEA() { return getToken(LanguageParser.LUCK_OF_THE_SEA, 0); }
+		public TerminalNode LUCK_OF_THE_SEA() { return getToken(minecraft_codeParser.LUCK_OF_THE_SEA, 0); }
 		public Inventory_slotContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_inventory_slot; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).enterInventory_slot(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof minecraft_codeListener ) ((minecraft_codeListener)listener).exitInventory_slot(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof minecraft_codeVisitor ) return ((minecraft_codeVisitor<? extends T>)visitor).visitInventory_slot(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Inventory_slotContext inventory_slot() throws RecognitionException {
@@ -828,76 +961,37 @@ public class LanguageParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0014}\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
-		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
-		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
-		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0001\u0000\u0001\u0000\u0001"+
-		"\u0000\u0004\u0000\u001a\b\u0000\u000b\u0000\f\u0000\u001b\u0001\u0000"+
-		"\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0003\u0001"+
-		"$\b\u0001\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002"+
-		"\u0001\u0002\u0001\u0002\u0005\u0002-\b\u0002\n\u0002\f\u00020\t\u0002"+
-		"\u0004\u00022\b\u0002\u000b\u0002\f\u00023\u0001\u0002\u0001\u0002\u0001"+
-		"\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001"+
-		"\u0003\u0005\u0003?\b\u0003\n\u0003\f\u0003B\t\u0003\u0004\u0003D\b\u0003"+
-		"\u000b\u0003\f\u0003E\u0001\u0003\u0001\u0003\u0001\u0004\u0001\u0004"+
-		"\u0001\u0004\u0005\u0004M\b\u0004\n\u0004\f\u0004P\t\u0004\u0001\u0005"+
-		"\u0001\u0005\u0001\u0005\u0005\u0005U\b\u0005\n\u0005\f\u0005X\t\u0005"+
-		"\u0001\u0006\u0001\u0006\u0001\u0006\u0003\u0006]\b\u0006\u0001\u0007"+
-		"\u0001\u0007\u0001\u0007\u0001\u0007\u0003\u0007c\b\u0007\u0001\b\u0001"+
-		"\b\u0001\b\u0005\bh\b\b\n\b\f\bk\t\b\u0001\t\u0001\t\u0001\t\u0005\tp"+
-		"\b\t\n\t\f\ts\t\t\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0003"+
-		"\n{\b\n\u0001\n\u0000\u0000\u000b\u0000\u0002\u0004\u0006\b\n\f\u000e"+
-		"\u0010\u0012\u0014\u0000\u0003\u0001\u0000\r\u000f\u0002\u0000\u0005\u0005"+
-		"\b\b\u0001\u0000\u0006\u0007\u0081\u0000\u0019\u0001\u0000\u0000\u0000"+
-		"\u0002#\u0001\u0000\u0000\u0000\u0004%\u0001\u0000\u0000\u0000\u00067"+
-		"\u0001\u0000\u0000\u0000\bI\u0001\u0000\u0000\u0000\nQ\u0001\u0000\u0000"+
-		"\u0000\fY\u0001\u0000\u0000\u0000\u000e^\u0001\u0000\u0000\u0000\u0010"+
-		"d\u0001\u0000\u0000\u0000\u0012l\u0001\u0000\u0000\u0000\u0014z\u0001"+
-		"\u0000\u0000\u0000\u0016\u0017\u0003\u0002\u0001\u0000\u0017\u0018\u0005"+
-		"\u000b\u0000\u0000\u0018\u001a\u0001\u0000\u0000\u0000\u0019\u0016\u0001"+
-		"\u0000\u0000\u0000\u001a\u001b\u0001\u0000\u0000\u0000\u001b\u0019\u0001"+
-		"\u0000\u0000\u0000\u001b\u001c\u0001\u0000\u0000\u0000\u001c\u001d\u0001"+
-		"\u0000\u0000\u0000\u001d\u001e\u0005\u0000\u0000\u0001\u001e\u0001\u0001"+
-		"\u0000\u0000\u0000\u001f$\u0003\u000e\u0007\u0000 $\u0003\u0004\u0002"+
-		"\u0000!$\u0003\u0006\u0003\u0000\"$\u0003\b\u0004\u0000#\u001f\u0001\u0000"+
-		"\u0000\u0000# \u0001\u0000\u0000\u0000#!\u0001\u0000\u0000\u0000#\"\u0001"+
-		"\u0000\u0000\u0000$\u0003\u0001\u0000\u0000\u0000%&\u0005\u0001\u0000"+
-		"\u0000&\'\u0005\t\u0000\u0000\'(\u0003\f\u0006\u0000()\u0005\n\u0000\u0000"+
-		")1\u0005\u0003\u0000\u0000*.\u0003\u0002\u0001\u0000+-\u0005\f\u0000\u0000"+
-		",+\u0001\u0000\u0000\u0000-0\u0001\u0000\u0000\u0000.,\u0001\u0000\u0000"+
-		"\u0000./\u0001\u0000\u0000\u0000/2\u0001\u0000\u0000\u00000.\u0001\u0000"+
-		"\u0000\u00001*\u0001\u0000\u0000\u000023\u0001\u0000\u0000\u000031\u0001"+
-		"\u0000\u0000\u000034\u0001\u0000\u0000\u000045\u0001\u0000\u0000\u0000"+
-		"56\u0005\u0004\u0000\u00006\u0005\u0001\u0000\u0000\u000078\u0005\u0002"+
-		"\u0000\u000089\u0005\t\u0000\u00009:\u0003\b\u0004\u0000:;\u0005\n\u0000"+
-		"\u0000;C\u0005\u0003\u0000\u0000<@\u0003\u0002\u0001\u0000=?\u0005\f\u0000"+
-		"\u0000>=\u0001\u0000\u0000\u0000?B\u0001\u0000\u0000\u0000@>\u0001\u0000"+
-		"\u0000\u0000@A\u0001\u0000\u0000\u0000AD\u0001\u0000\u0000\u0000B@\u0001"+
-		"\u0000\u0000\u0000C<\u0001\u0000\u0000\u0000DE\u0001\u0000\u0000\u0000"+
-		"EC\u0001\u0000\u0000\u0000EF\u0001\u0000\u0000\u0000FG\u0001\u0000\u0000"+
-		"\u0000GH\u0005\u0004\u0000\u0000H\u0007\u0001\u0000\u0000\u0000IN\u0003"+
-		"\n\u0005\u0000JK\u0005\u0010\u0000\u0000KM\u0003\n\u0005\u0000LJ\u0001"+
-		"\u0000\u0000\u0000MP\u0001\u0000\u0000\u0000NL\u0001\u0000\u0000\u0000"+
-		"NO\u0001\u0000\u0000\u0000O\t\u0001\u0000\u0000\u0000PN\u0001\u0000\u0000"+
-		"\u0000QV\u0003\f\u0006\u0000RS\u0005\u0011\u0000\u0000SU\u0003\f\u0006"+
-		"\u0000TR\u0001\u0000\u0000\u0000UX\u0001\u0000\u0000\u0000VT\u0001\u0000"+
-		"\u0000\u0000VW\u0001\u0000\u0000\u0000W\u000b\u0001\u0000\u0000\u0000"+
-		"XV\u0001\u0000\u0000\u0000Y\\\u0003\u0010\b\u0000Z[\u0007\u0000\u0000"+
-		"\u0000[]\u0003\u0010\b\u0000\\Z\u0001\u0000\u0000\u0000\\]\u0001\u0000"+
-		"\u0000\u0000]\r\u0001\u0000\u0000\u0000^_\u0005\u0013\u0000\u0000_b\u0005"+
-		"\u000b\u0000\u0000`c\u0003\u0010\b\u0000ac\u0003\b\u0004\u0000b`\u0001"+
-		"\u0000\u0000\u0000ba\u0001\u0000\u0000\u0000c\u000f\u0001\u0000\u0000"+
-		"\u0000di\u0003\u0012\t\u0000ef\u0007\u0001\u0000\u0000fh\u0003\u0012\t"+
-		"\u0000ge\u0001\u0000\u0000\u0000hk\u0001\u0000\u0000\u0000ig\u0001\u0000"+
-		"\u0000\u0000ij\u0001\u0000\u0000\u0000j\u0011\u0001\u0000\u0000\u0000"+
-		"ki\u0001\u0000\u0000\u0000lq\u0003\u0014\n\u0000mn\u0007\u0002\u0000\u0000"+
-		"np\u0003\u0014\n\u0000om\u0001\u0000\u0000\u0000ps\u0001\u0000\u0000\u0000"+
-		"qo\u0001\u0000\u0000\u0000qr\u0001\u0000\u0000\u0000r\u0013\u0001\u0000"+
-		"\u0000\u0000sq\u0001\u0000\u0000\u0000t{\u0005\u0012\u0000\u0000u{\u0005"+
-		"\u0013\u0000\u0000vw\u0005\t\u0000\u0000wx\u0003\b\u0004\u0000xy\u0005"+
-		"\n\u0000\u0000y{\u0001\u0000\u0000\u0000zt\u0001\u0000\u0000\u0000zu\u0001"+
-		"\u0000\u0000\u0000zv\u0001\u0000\u0000\u0000{\u0015\u0001\u0000\u0000"+
-		"\u0000\r\u001b#.3@ENV\\biqz";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\26\177\4\2\t\2\4"+
+		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
+		"\13\4\f\t\f\3\2\3\2\3\2\6\2\34\n\2\r\2\16\2\35\3\2\3\2\3\3\3\3\3\3\3\3"+
+		"\5\3&\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4/\n\4\f\4\16\4\62\13\4\6\4\64"+
+		"\n\4\r\4\16\4\65\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\7\5A\n\5\f\5\16\5"+
+		"D\13\5\6\5F\n\5\r\5\16\5G\3\5\3\5\3\6\3\6\3\6\7\6O\n\6\f\6\16\6R\13\6"+
+		"\3\7\3\7\3\7\7\7W\n\7\f\7\16\7Z\13\7\3\b\3\b\3\b\5\b_\n\b\3\t\3\t\3\t"+
+		"\3\t\5\te\n\t\3\n\3\n\3\n\7\nj\n\n\f\n\16\nm\13\n\3\13\3\13\3\13\7\13"+
+		"r\n\13\f\13\16\13u\13\13\3\f\3\f\3\f\3\f\3\f\3\f\5\f}\n\f\3\f\2\2\r\2"+
+		"\4\6\b\n\f\16\20\22\24\26\2\5\3\2\17\21\4\2\7\7\n\n\3\2\b\t\2\u0083\2"+
+		"\33\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b9\3\2\2\2\nK\3\2\2\2\fS\3\2\2\2\16"+
+		"[\3\2\2\2\20`\3\2\2\2\22f\3\2\2\2\24n\3\2\2\2\26|\3\2\2\2\30\31\5\4\3"+
+		"\2\31\32\7\r\2\2\32\34\3\2\2\2\33\30\3\2\2\2\34\35\3\2\2\2\35\33\3\2\2"+
+		"\2\35\36\3\2\2\2\36\37\3\2\2\2\37 \7\2\2\3 \3\3\2\2\2!&\5\20\t\2\"&\5"+
+		"\6\4\2#&\5\b\5\2$&\5\n\6\2%!\3\2\2\2%\"\3\2\2\2%#\3\2\2\2%$\3\2\2\2&\5"+
+		"\3\2\2\2\'(\7\3\2\2()\7\13\2\2)*\5\16\b\2*+\7\f\2\2+\63\7\5\2\2,\60\5"+
+		"\4\3\2-/\7\16\2\2.-\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\60\61\3\2\2\2\61\64"+
+		"\3\2\2\2\62\60\3\2\2\2\63,\3\2\2\2\64\65\3\2\2\2\65\63\3\2\2\2\65\66\3"+
+		"\2\2\2\66\67\3\2\2\2\678\7\6\2\28\7\3\2\2\29:\7\4\2\2:;\7\13\2\2;<\5\n"+
+		"\6\2<=\7\f\2\2=E\7\5\2\2>B\5\4\3\2?A\7\16\2\2@?\3\2\2\2AD\3\2\2\2B@\3"+
+		"\2\2\2BC\3\2\2\2CF\3\2\2\2DB\3\2\2\2E>\3\2\2\2FG\3\2\2\2GE\3\2\2\2GH\3"+
+		"\2\2\2HI\3\2\2\2IJ\7\6\2\2J\t\3\2\2\2KP\5\f\7\2LM\7\22\2\2MO\5\f\7\2N"+
+		"L\3\2\2\2OR\3\2\2\2PN\3\2\2\2PQ\3\2\2\2Q\13\3\2\2\2RP\3\2\2\2SX\5\16\b"+
+		"\2TU\7\23\2\2UW\5\16\b\2VT\3\2\2\2WZ\3\2\2\2XV\3\2\2\2XY\3\2\2\2Y\r\3"+
+		"\2\2\2ZX\3\2\2\2[^\5\22\n\2\\]\t\2\2\2]_\5\22\n\2^\\\3\2\2\2^_\3\2\2\2"+
+		"_\17\3\2\2\2`a\7\25\2\2ad\7\r\2\2be\5\22\n\2ce\5\n\6\2db\3\2\2\2dc\3\2"+
+		"\2\2e\21\3\2\2\2fk\5\24\13\2gh\t\3\2\2hj\5\24\13\2ig\3\2\2\2jm\3\2\2\2"+
+		"ki\3\2\2\2kl\3\2\2\2l\23\3\2\2\2mk\3\2\2\2ns\5\26\f\2op\t\4\2\2pr\5\26"+
+		"\f\2qo\3\2\2\2ru\3\2\2\2sq\3\2\2\2st\3\2\2\2t\25\3\2\2\2us\3\2\2\2v}\7"+
+		"\24\2\2w}\7\25\2\2xy\7\13\2\2yz\5\n\6\2z{\7\f\2\2{}\3\2\2\2|v\3\2\2\2"+
+		"|w\3\2\2\2|x\3\2\2\2}\27\3\2\2\2\17\35%\60\65BGPX^dks|";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

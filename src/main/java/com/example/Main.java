@@ -1,5 +1,6 @@
 package com.example;
 
+import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -8,7 +9,7 @@ import org.antlr.v4.gui.Trees;
 
 public class Main {
 
-    private static final String EXTENSION = "lang";
+    private static final String EXTENSION = "mc";
     private static final String DIRBASE = "src/test/resources/";
 
     public static void main(String[] args) throws IOException {
@@ -18,22 +19,25 @@ public class Main {
             System.out.println("START: " + file);
 
             CharStream in = CharStreams.fromFileName(DIRBASE + file);
-            LanguageLexer lexer = new LanguageLexer(in);
+            minecraft_codeLexer lexer = new minecraft_codeLexer(in);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
-            LanguageParser parser = new LanguageParser(tokens);
-            LanguageParser.ProgramaContext tree = parser.programa();
+            minecraft_codeParser parser = new minecraft_codeParser(tokens);
+            minecraft_codeParser.BookshelfContext tree = parser.bookshelf();
+            System.out.println("PARSE TREE: " + tree.toStringTree(parser));
             tokens.fill();
             System.out.println("TOKENS:");
 
             tokens.getTokens().forEach(token -> {
                 System.out.println(
                     "Texto: " + token.getText() +
-                    " | Tipo: " + LanguageLexer.VOCABULARY.getSymbolicName(token.getType()) +
+                    " | Tipo: " + minecraft_codeLexer.VOCABULARY.getSymbolicName(token.getType()) +
                     " | Ln " + token.getLine() + ", Col " + token.getCharPositionInLine()
                 );
             });
 
-            Trees.inspect(tree, parser);
+            if (!GraphicsEnvironment.isHeadless()) {
+                Trees.inspect(tree, parser);
+            }
             LanguageCustomVisitor visitor = new LanguageCustomVisitor();
             visitor.visit(tree);
 
