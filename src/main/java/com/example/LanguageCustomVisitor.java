@@ -78,6 +78,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Object> {
     @Override
     public Object visitInventory_slot(Inventory_slotContext ctx) {
     Object eval = visit(instr);
+    
     if(eval instanceof String){
         result = (String) eval;
     }

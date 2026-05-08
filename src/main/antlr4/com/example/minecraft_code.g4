@@ -31,7 +31,6 @@ crafting_recipe   : resource_pile ((EFFICIENCY | SHARPNESS) resource_pile)* ;
 resource_pile     : inventory_slot ((MULTISHOT | PIERCING) inventory_slot)* ;
 
 inventory_slot      : ENT 
-                    | FEATHER_AND_INK
                     | BOOK 
                     | LURE redstone_circuit LUCK_OF_THE_SEA 
                     ;
