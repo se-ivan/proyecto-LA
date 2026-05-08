@@ -20,7 +20,7 @@ public class minecraft_codeParser extends Parser {
 		FORTUNE=1, INFINITY=2, UNBREAKING_START=3, UNBREAKING_END=4, SHARPNESS=5, 
 		MULTISHOT=6, PIERCING=7, EFFICIENCY=8, LURE=9, LUCK_OF_THE_SEA=10, APPLY=11, 
 		LAPIS_LAZULI=12, KNOCKBACK=13, PUNCH=14, MENDING=15, IMPALING=16, CHANNELING=17, 
-		ENT=18, BOOK=19, WS=20;
+		ENT=18, FEATHER_AND_INK=19, BOOK=20, COMMENT=21, WS=22;
 	public static final int
 		RULE_bookshelf = 0, RULE_enchanting = 1, RULE_redstone_logic = 2, RULE_redstone_clock = 3, 
 		RULE_redstone_circuit = 4, RULE_signal_chain = 5, RULE_judgment = 6, RULE_enchant = 7, 
@@ -44,7 +44,8 @@ public class minecraft_codeParser extends Parser {
 			"'|:\u268D\u2237\u14B7'", "'|:\u268D\u152E\u00B7\u01C0\u00B7\u23BD\u148D\u2393\u23BD\u14A3\u2351\u14B7\u23BD\u03DF\u14B7\u158B'", 
 			"'\uD83C\uDF00'", "'\uD83D\uDD39'", "'\u00B7\u01C0\u00B7\u30EA\u148D\u152E\u00B7\u01C0\u00B7\u154A\u158B\u152E\u00B7\u01C0\u00B7'", 
 			"'I!\u268D\u30EA\u152E\u2351'", "'\u14B2\u14B7\u30EA\u21B8\u254E\u30EA\u2524'", 
-			"'\u254E\u14B2i!\u158B|:\u254E\u30EA\u2524'", "'\u152E\u2351\u158B\u30EA\u30EA\u14B7|:\u254E\u30EA\u2524'"
+			"'\u254E\u14B2i!\u158B|:\u254E\u30EA\u2524'", "'\u152E\u2351\u158B\u30EA\u30EA\u14B7|:\u254E\u30EA\u2524'", 
+			null, "'\u268D\u30EA\u152E\u2351'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -53,7 +54,7 @@ public class minecraft_codeParser extends Parser {
 			null, "FORTUNE", "INFINITY", "UNBREAKING_START", "UNBREAKING_END", "SHARPNESS", 
 			"MULTISHOT", "PIERCING", "EFFICIENCY", "LURE", "LUCK_OF_THE_SEA", "APPLY", 
 			"LAPIS_LAZULI", "KNOCKBACK", "PUNCH", "MENDING", "IMPALING", "CHANNELING", 
-			"ENT", "BOOK", "WS"
+			"ENT", "FEATHER_AND_INK", "BOOK", "COMMENT", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -160,7 +161,7 @@ public class minecraft_codeParser extends Parser {
 				setState(27); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << FEATHER_AND_INK) | (1L << BOOK))) != 0) );
 			setState(29);
 			match(EOF);
 			}
@@ -338,7 +339,7 @@ public class minecraft_codeParser extends Parser {
 				setState(51); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << FEATHER_AND_INK) | (1L << BOOK))) != 0) );
 			setState(53);
 			match(UNBREAKING_END);
 			}
@@ -436,7 +437,7 @@ public class minecraft_codeParser extends Parser {
 				setState(69); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << FEATHER_AND_INK) | (1L << BOOK))) != 0) );
 			setState(71);
 			match(UNBREAKING_END);
 			}
@@ -888,6 +889,7 @@ public class minecraft_codeParser extends Parser {
 
 	public static class Inventory_slotContext extends ParserRuleContext {
 		public TerminalNode ENT() { return getToken(minecraft_codeParser.ENT, 0); }
+		public TerminalNode FEATHER_AND_INK() { return getToken(minecraft_codeParser.FEATHER_AND_INK, 0); }
 		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
 		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
@@ -917,7 +919,7 @@ public class minecraft_codeParser extends Parser {
 		Inventory_slotContext _localctx = new Inventory_slotContext(_ctx, getState());
 		enterRule(_localctx, 20, RULE_inventory_slot);
 		try {
-			setState(122);
+			setState(123);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ENT:
@@ -927,21 +929,28 @@ public class minecraft_codeParser extends Parser {
 				match(ENT);
 				}
 				break;
-			case BOOK:
+			case FEATHER_AND_INK:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(117);
+				match(FEATHER_AND_INK);
+				}
+				break;
+			case BOOK:
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(118);
 				match(BOOK);
 				}
 				break;
 			case LURE:
-				enterOuterAlt(_localctx, 3);
+				enterOuterAlt(_localctx, 4);
 				{
-				setState(118);
-				match(LURE);
 				setState(119);
-				redstone_circuit();
+				match(LURE);
 				setState(120);
+				redstone_circuit();
+				setState(121);
 				match(LUCK_OF_THE_SEA);
 				}
 				break;
@@ -961,37 +970,38 @@ public class minecraft_codeParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\26\177\4\2\t\2\4"+
-		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
-		"\13\4\f\t\f\3\2\3\2\3\2\6\2\34\n\2\r\2\16\2\35\3\2\3\2\3\3\3\3\3\3\3\3"+
-		"\5\3&\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4/\n\4\f\4\16\4\62\13\4\6\4\64"+
-		"\n\4\r\4\16\4\65\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\7\5A\n\5\f\5\16\5"+
-		"D\13\5\6\5F\n\5\r\5\16\5G\3\5\3\5\3\6\3\6\3\6\7\6O\n\6\f\6\16\6R\13\6"+
-		"\3\7\3\7\3\7\7\7W\n\7\f\7\16\7Z\13\7\3\b\3\b\3\b\5\b_\n\b\3\t\3\t\3\t"+
-		"\3\t\5\te\n\t\3\n\3\n\3\n\7\nj\n\n\f\n\16\nm\13\n\3\13\3\13\3\13\7\13"+
-		"r\n\13\f\13\16\13u\13\13\3\f\3\f\3\f\3\f\3\f\3\f\5\f}\n\f\3\f\2\2\r\2"+
-		"\4\6\b\n\f\16\20\22\24\26\2\5\3\2\17\21\4\2\7\7\n\n\3\2\b\t\2\u0083\2"+
-		"\33\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b9\3\2\2\2\nK\3\2\2\2\fS\3\2\2\2\16"+
-		"[\3\2\2\2\20`\3\2\2\2\22f\3\2\2\2\24n\3\2\2\2\26|\3\2\2\2\30\31\5\4\3"+
-		"\2\31\32\7\r\2\2\32\34\3\2\2\2\33\30\3\2\2\2\34\35\3\2\2\2\35\33\3\2\2"+
-		"\2\35\36\3\2\2\2\36\37\3\2\2\2\37 \7\2\2\3 \3\3\2\2\2!&\5\20\t\2\"&\5"+
-		"\6\4\2#&\5\b\5\2$&\5\n\6\2%!\3\2\2\2%\"\3\2\2\2%#\3\2\2\2%$\3\2\2\2&\5"+
-		"\3\2\2\2\'(\7\3\2\2()\7\13\2\2)*\5\16\b\2*+\7\f\2\2+\63\7\5\2\2,\60\5"+
-		"\4\3\2-/\7\16\2\2.-\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\60\61\3\2\2\2\61\64"+
-		"\3\2\2\2\62\60\3\2\2\2\63,\3\2\2\2\64\65\3\2\2\2\65\63\3\2\2\2\65\66\3"+
-		"\2\2\2\66\67\3\2\2\2\678\7\6\2\28\7\3\2\2\29:\7\4\2\2:;\7\13\2\2;<\5\n"+
-		"\6\2<=\7\f\2\2=E\7\5\2\2>B\5\4\3\2?A\7\16\2\2@?\3\2\2\2AD\3\2\2\2B@\3"+
-		"\2\2\2BC\3\2\2\2CF\3\2\2\2DB\3\2\2\2E>\3\2\2\2FG\3\2\2\2GE\3\2\2\2GH\3"+
-		"\2\2\2HI\3\2\2\2IJ\7\6\2\2J\t\3\2\2\2KP\5\f\7\2LM\7\22\2\2MO\5\f\7\2N"+
-		"L\3\2\2\2OR\3\2\2\2PN\3\2\2\2PQ\3\2\2\2Q\13\3\2\2\2RP\3\2\2\2SX\5\16\b"+
-		"\2TU\7\23\2\2UW\5\16\b\2VT\3\2\2\2WZ\3\2\2\2XV\3\2\2\2XY\3\2\2\2Y\r\3"+
-		"\2\2\2ZX\3\2\2\2[^\5\22\n\2\\]\t\2\2\2]_\5\22\n\2^\\\3\2\2\2^_\3\2\2\2"+
-		"_\17\3\2\2\2`a\7\25\2\2ad\7\r\2\2be\5\22\n\2ce\5\n\6\2db\3\2\2\2dc\3\2"+
-		"\2\2e\21\3\2\2\2fk\5\24\13\2gh\t\3\2\2hj\5\24\13\2ig\3\2\2\2jm\3\2\2\2"+
-		"ki\3\2\2\2kl\3\2\2\2l\23\3\2\2\2mk\3\2\2\2ns\5\26\f\2op\t\4\2\2pr\5\26"+
-		"\f\2qo\3\2\2\2ru\3\2\2\2sq\3\2\2\2st\3\2\2\2t\25\3\2\2\2us\3\2\2\2v}\7"+
-		"\24\2\2w}\7\25\2\2xy\7\13\2\2yz\5\n\6\2z{\7\f\2\2{}\3\2\2\2|v\3\2\2\2"+
-		"|w\3\2\2\2|x\3\2\2\2}\27\3\2\2\2\17\35%\60\65BGPX^dks|";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\30\u0080\4\2\t\2"+
+		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
+		"\t\13\4\f\t\f\3\2\3\2\3\2\6\2\34\n\2\r\2\16\2\35\3\2\3\2\3\3\3\3\3\3\3"+
+		"\3\5\3&\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4/\n\4\f\4\16\4\62\13\4\6\4"+
+		"\64\n\4\r\4\16\4\65\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\7\5A\n\5\f\5\16"+
+		"\5D\13\5\6\5F\n\5\r\5\16\5G\3\5\3\5\3\6\3\6\3\6\7\6O\n\6\f\6\16\6R\13"+
+		"\6\3\7\3\7\3\7\7\7W\n\7\f\7\16\7Z\13\7\3\b\3\b\3\b\5\b_\n\b\3\t\3\t\3"+
+		"\t\3\t\5\te\n\t\3\n\3\n\3\n\7\nj\n\n\f\n\16\nm\13\n\3\13\3\13\3\13\7\13"+
+		"r\n\13\f\13\16\13u\13\13\3\f\3\f\3\f\3\f\3\f\3\f\3\f\5\f~\n\f\3\f\2\2"+
+		"\r\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\17\21\4\2\7\7\n\n\3\2\b\t\2\u0085"+
+		"\2\33\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b9\3\2\2\2\nK\3\2\2\2\fS\3\2\2\2"+
+		"\16[\3\2\2\2\20`\3\2\2\2\22f\3\2\2\2\24n\3\2\2\2\26}\3\2\2\2\30\31\5\4"+
+		"\3\2\31\32\7\r\2\2\32\34\3\2\2\2\33\30\3\2\2\2\34\35\3\2\2\2\35\33\3\2"+
+		"\2\2\35\36\3\2\2\2\36\37\3\2\2\2\37 \7\2\2\3 \3\3\2\2\2!&\5\20\t\2\"&"+
+		"\5\6\4\2#&\5\b\5\2$&\5\n\6\2%!\3\2\2\2%\"\3\2\2\2%#\3\2\2\2%$\3\2\2\2"+
+		"&\5\3\2\2\2\'(\7\3\2\2()\7\13\2\2)*\5\16\b\2*+\7\f\2\2+\63\7\5\2\2,\60"+
+		"\5\4\3\2-/\7\16\2\2.-\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\60\61\3\2\2\2\61"+
+		"\64\3\2\2\2\62\60\3\2\2\2\63,\3\2\2\2\64\65\3\2\2\2\65\63\3\2\2\2\65\66"+
+		"\3\2\2\2\66\67\3\2\2\2\678\7\6\2\28\7\3\2\2\29:\7\4\2\2:;\7\13\2\2;<\5"+
+		"\n\6\2<=\7\f\2\2=E\7\5\2\2>B\5\4\3\2?A\7\16\2\2@?\3\2\2\2AD\3\2\2\2B@"+
+		"\3\2\2\2BC\3\2\2\2CF\3\2\2\2DB\3\2\2\2E>\3\2\2\2FG\3\2\2\2GE\3\2\2\2G"+
+		"H\3\2\2\2HI\3\2\2\2IJ\7\6\2\2J\t\3\2\2\2KP\5\f\7\2LM\7\22\2\2MO\5\f\7"+
+		"\2NL\3\2\2\2OR\3\2\2\2PN\3\2\2\2PQ\3\2\2\2Q\13\3\2\2\2RP\3\2\2\2SX\5\16"+
+		"\b\2TU\7\23\2\2UW\5\16\b\2VT\3\2\2\2WZ\3\2\2\2XV\3\2\2\2XY\3\2\2\2Y\r"+
+		"\3\2\2\2ZX\3\2\2\2[^\5\22\n\2\\]\t\2\2\2]_\5\22\n\2^\\\3\2\2\2^_\3\2\2"+
+		"\2_\17\3\2\2\2`a\7\26\2\2ad\7\r\2\2be\5\22\n\2ce\5\n\6\2db\3\2\2\2dc\3"+
+		"\2\2\2e\21\3\2\2\2fk\5\24\13\2gh\t\3\2\2hj\5\24\13\2ig\3\2\2\2jm\3\2\2"+
+		"\2ki\3\2\2\2kl\3\2\2\2l\23\3\2\2\2mk\3\2\2\2ns\5\26\f\2op\t\4\2\2pr\5"+
+		"\26\f\2qo\3\2\2\2ru\3\2\2\2sq\3\2\2\2st\3\2\2\2t\25\3\2\2\2us\3\2\2\2"+
+		"v~\7\24\2\2w~\7\25\2\2x~\7\26\2\2yz\7\13\2\2z{\5\n\6\2{|\7\f\2\2|~\3\2"+
+		"\2\2}v\3\2\2\2}w\3\2\2\2}x\3\2\2\2}y\3\2\2\2~\27\3\2\2\2\17\35%\60\65"+
+		"BGPX^dks}";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

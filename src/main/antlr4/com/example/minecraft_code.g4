@@ -31,6 +31,7 @@ crafting_recipe   : resource_pile ((EFFICIENCY | SHARPNESS) resource_pile)* ;
 resource_pile     : inventory_slot ((MULTISHOT | PIERCING) inventory_slot)* ;
 
 inventory_slot      : ENT 
+                    | FEATHER_AND_INK
                     | BOOK 
                     | LURE redstone_circuit LUCK_OF_THE_SEA 
                     ;
@@ -56,5 +57,7 @@ IMPALING         : '╎ᒲi!ᖋ|:╎リ┤' ;            // "||"
 CHANNELING       : 'ᔮ⍑ᖋリリᒷ|:╎リ┤' ;         // "&&"
 
 ENT              : [0-9]+ ;
+FEATHER_AND_INK  : '⚍リᔮ⍑' ;               // "var"
 BOOK             : [a-zA-Zᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|][a-zA-Z0-9ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|]* ; 
+COMMENT          : '//' ~[\r\n]* -> skip ; // Comentarios de una linea
 WS               : [ \t\n\r\f]+ -> skip ;
