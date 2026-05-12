@@ -24,7 +24,7 @@ signal_chain     : judgment (CHANNELING judgment)* ;
 
 judgment : crafting_recipe ((PUNCH | KNOCKBACK | MENDING) crafting_recipe)? ;
 
-enchant  : BOOK APPLY (crafting_recipe | redstone_circuit) ;
+enchant  : BEDROCK? BOOK APPLY (crafting_recipe | redstone_circuit) ;
 
 crafting_recipe   : resource_pile ((EFFICIENCY | SHARPNESS) resource_pile)* ;
 
@@ -57,6 +57,7 @@ CHANNELING       : 'ᔮ⍑ᖋリリᒷ|:╎リ┤' ;         // "&&"
 
 ENT              : [0-9]+ ;
 FEATHER_AND_INK  : '⚍リᔮ⍑' ;               // "var"
+BEDROCK          : 'ᕊᒷ↸∷ᒍᔮꖌ' ;            // "constante"
 BOOK             : [a-zA-Zᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|][a-zA-Z0-9ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|]* ; 
 COMMENT          : '//' ~[\r\n]* -> skip ; // Comentarios de una linea
 WS               : [ \t\n\r\f]+ -> skip ;
