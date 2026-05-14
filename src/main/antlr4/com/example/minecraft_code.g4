@@ -24,13 +24,14 @@ signal_chain     : judgment (CHANNELING judgment)* ;
 
 judgment : crafting_recipe ((PUNCH | KNOCKBACK | MENDING) crafting_recipe)? ;
 
-enchant  : BEDROCK? BOOK APPLY (crafting_recipe | redstone_circuit) ;
+enchant  : TYPE? BOOK APPLY (crafting_recipe | redstone_circuit) ;
 
 crafting_recipe   : resource_pile ((EFFICIENCY | SHARPNESS) resource_pile)* ;
 
 resource_pile     : inventory_slot ((MULTISHOT | PIERCING) inventory_slot)* ;
 
 inventory_slot      : ENT 
+                    | BOOL
                     | BOOK 
                     | LURE redstone_circuit LUCK_OF_THE_SEA 
                     ;
@@ -57,7 +58,8 @@ CHANNELING       : 'ᔮ⍑ᖋリリᒷ|:╎リ┤' ;         // "&&"
 
 ENT              : [0-9]+ ;
 FEATHER_AND_INK  : '⚍リᔮ⍑' ;               // "var"
-BEDROCK          : 'ᕊᒷ↸∷ᒍᔮꖌ' ;            // "constante"
+TYPE             : '╎リᒣ' | 'ϟᒣ∷' | 'ᕊᒍᒍ|:' ; // "int" | "str" | "bool"
+BOOL             : 'ℸ∷⚍ᒷ' | '⎓ᖋ|:ϟᒷ' ;       // "true" | "false"
 BOOK             : [a-zA-Zᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|][a-zA-Z0-9ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|]* ; 
 COMMENT          : '//' ~[\r\n]* -> skip ; // Comentarios de una linea
 WS               : [ \t\n\r\f]+ -> skip ;

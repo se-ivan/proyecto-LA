@@ -19,7 +19,7 @@ public class minecraft_codeParser extends Parser {
 		FORTUNE=1, INFINITY=2, UNBREAKING_START=3, UNBREAKING_END=4, SHARPNESS=5, 
 		MULTISHOT=6, PIERCING=7, EFFICIENCY=8, LURE=9, LUCK_OF_THE_SEA=10, APPLY=11, 
 		LAPIS_LAZULI=12, KNOCKBACK=13, PUNCH=14, MENDING=15, IMPALING=16, CHANNELING=17, 
-		ENT=18, FEATHER_AND_INK=19, BEDROCK=20, BOOK=21, COMMENT=22, WS=23;
+		ENT=18, FEATHER_AND_INK=19, TYPE=20, BOOL=21, BOOK=22, COMMENT=23, WS=24;
 	public static final int
 		RULE_bookshelf = 0, RULE_enchanting = 1, RULE_redstone_logic = 2, RULE_redstone_clock = 3, 
 		RULE_redstone_circuit = 4, RULE_signal_chain = 5, RULE_judgment = 6, RULE_enchant = 7, 
@@ -44,7 +44,7 @@ public class minecraft_codeParser extends Parser {
 			"'\\uD83C\uDF00'", "'\\uD83D\uDD39'", "'\\u00B7\\u01C0\\u00B7\\u30EA\\u148D\\u152E\\u00B7\\u01C0\\u00B7\\u154A\\u158B\\u152E\\u00B7\\u01C0\\u00B7'", 
 			"'I!\\u268D\\u30EA\\u152E\\u2351'", "'\\u14B2\\u14B7\\u30EA\\u21B8\\u254E\\u30EA\\u2524'", 
 			"'\\u254E\\u14B2i!\\u158B|:\\u254E\\u30EA\\u2524'", "'\\u152E\\u2351\\u158B\\u30EA\\u30EA\\u14B7|:\\u254E\\u30EA\\u2524'", 
-			null, "'\\u268D\\u30EA\\u152E\\u2351'", "'\\u154A\\u14B7\\u21B8\\u2237\\u148D\\u152E\\uA58C'"
+			null, "'\\u268D\\u30EA\\u152E\\u2351'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -53,7 +53,7 @@ public class minecraft_codeParser extends Parser {
 			null, "FORTUNE", "INFINITY", "UNBREAKING_START", "UNBREAKING_END", "SHARPNESS", 
 			"MULTISHOT", "PIERCING", "EFFICIENCY", "LURE", "LUCK_OF_THE_SEA", "APPLY", 
 			"LAPIS_LAZULI", "KNOCKBACK", "PUNCH", "MENDING", "IMPALING", "CHANNELING", 
-			"ENT", "FEATHER_AND_INK", "BEDROCK", "BOOK", "COMMENT", "WS"
+			"ENT", "FEATHER_AND_INK", "TYPE", "BOOL", "BOOK", "COMMENT", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -148,7 +148,7 @@ public class minecraft_codeParser extends Parser {
 				setState(27); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 3408390L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 7602694L) != 0) );
 			setState(29);
 			match(EOF);
 			}
@@ -302,7 +302,7 @@ public class minecraft_codeParser extends Parser {
 				setState(51); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 3408390L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 7602694L) != 0) );
 			setState(53);
 			match(UNBREAKING_END);
 			}
@@ -388,7 +388,7 @@ public class minecraft_codeParser extends Parser {
 				setState(69); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 3408390L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 7602694L) != 0) );
 			setState(71);
 			match(UNBREAKING_END);
 			}
@@ -585,7 +585,7 @@ public class minecraft_codeParser extends Parser {
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode BEDROCK() { return getToken(minecraft_codeParser.BEDROCK, 0); }
+		public TerminalNode TYPE() { return getToken(minecraft_codeParser.TYPE, 0); }
 		public EnchantContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -602,10 +602,10 @@ public class minecraft_codeParser extends Parser {
 			setState(95);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (_la==BEDROCK) {
+			if (_la==TYPE) {
 				{
 				setState(94);
-				match(BEDROCK);
+				match(TYPE);
 				}
 			}
 
@@ -781,6 +781,7 @@ public class minecraft_codeParser extends Parser {
 	@SuppressWarnings("CheckReturnValue")
 	public static class Inventory_slotContext extends ParserRuleContext {
 		public TerminalNode ENT() { return getToken(minecraft_codeParser.ENT, 0); }
+		public TerminalNode BOOL() { return getToken(minecraft_codeParser.BOOL, 0); }
 		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
 		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
@@ -797,7 +798,7 @@ public class minecraft_codeParser extends Parser {
 		Inventory_slotContext _localctx = new Inventory_slotContext(_ctx, getState());
 		enterRule(_localctx, 20, RULE_inventory_slot);
 		try {
-			setState(125);
+			setState(126);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ENT:
@@ -807,21 +808,28 @@ public class minecraft_codeParser extends Parser {
 				match(ENT);
 				}
 				break;
-			case BOOK:
+			case BOOL:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(120);
+				match(BOOL);
+				}
+				break;
+			case BOOK:
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(121);
 				match(BOOK);
 				}
 				break;
 			case LURE:
-				enterOuterAlt(_localctx, 3);
+				enterOuterAlt(_localctx, 4);
 				{
-				setState(121);
-				match(LURE);
 				setState(122);
-				redstone_circuit();
+				match(LURE);
 				setState(123);
+				redstone_circuit();
+				setState(124);
 				match(LUCK_OF_THE_SEA);
 				}
 				break;
@@ -841,7 +849,7 @@ public class minecraft_codeParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0017\u0080\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
+		"\u0004\u0001\u0018\u0081\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
 		"\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004"+
 		"\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007"+
 		"\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0001\u0000\u0001\u0000"+
@@ -859,21 +867,21 @@ public class minecraft_codeParser extends Parser {
 		"\u0007\u0003\u0007`\b\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0001"+
 		"\u0007\u0003\u0007f\b\u0007\u0001\b\u0001\b\u0001\b\u0005\bk\b\b\n\b\f"+
 		"\bn\t\b\u0001\t\u0001\t\u0001\t\u0005\ts\b\t\n\t\f\tv\t\t\u0001\n\u0001"+
-		"\n\u0001\n\u0001\n\u0001\n\u0001\n\u0003\n~\b\n\u0001\n\u0000\u0000\u000b"+
-		"\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0000\u0003\u0001"+
-		"\u0000\r\u000f\u0002\u0000\u0005\u0005\b\b\u0001\u0000\u0006\u0007\u0085"+
-		"\u0000\u0019\u0001\u0000\u0000\u0000\u0002#\u0001\u0000\u0000\u0000\u0004"+
-		"%\u0001\u0000\u0000\u0000\u00067\u0001\u0000\u0000\u0000\bI\u0001\u0000"+
-		"\u0000\u0000\nQ\u0001\u0000\u0000\u0000\fY\u0001\u0000\u0000\u0000\u000e"+
-		"_\u0001\u0000\u0000\u0000\u0010g\u0001\u0000\u0000\u0000\u0012o\u0001"+
-		"\u0000\u0000\u0000\u0014}\u0001\u0000\u0000\u0000\u0016\u0017\u0003\u0002"+
-		"\u0001\u0000\u0017\u0018\u0005\u000b\u0000\u0000\u0018\u001a\u0001\u0000"+
-		"\u0000\u0000\u0019\u0016\u0001\u0000\u0000\u0000\u001a\u001b\u0001\u0000"+
-		"\u0000\u0000\u001b\u0019\u0001\u0000\u0000\u0000\u001b\u001c\u0001\u0000"+
-		"\u0000\u0000\u001c\u001d\u0001\u0000\u0000\u0000\u001d\u001e\u0005\u0000"+
-		"\u0000\u0001\u001e\u0001\u0001\u0000\u0000\u0000\u001f$\u0003\u000e\u0007"+
-		"\u0000 $\u0003\u0004\u0002\u0000!$\u0003\u0006\u0003\u0000\"$\u0003\b"+
-		"\u0004\u0000#\u001f\u0001\u0000\u0000\u0000# \u0001\u0000\u0000\u0000"+
+		"\n\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0003\n\u007f\b\n\u0001\n\u0000"+
+		"\u0000\u000b\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0000"+
+		"\u0003\u0001\u0000\r\u000f\u0002\u0000\u0005\u0005\b\b\u0001\u0000\u0006"+
+		"\u0007\u0087\u0000\u0019\u0001\u0000\u0000\u0000\u0002#\u0001\u0000\u0000"+
+		"\u0000\u0004%\u0001\u0000\u0000\u0000\u00067\u0001\u0000\u0000\u0000\b"+
+		"I\u0001\u0000\u0000\u0000\nQ\u0001\u0000\u0000\u0000\fY\u0001\u0000\u0000"+
+		"\u0000\u000e_\u0001\u0000\u0000\u0000\u0010g\u0001\u0000\u0000\u0000\u0012"+
+		"o\u0001\u0000\u0000\u0000\u0014~\u0001\u0000\u0000\u0000\u0016\u0017\u0003"+
+		"\u0002\u0001\u0000\u0017\u0018\u0005\u000b\u0000\u0000\u0018\u001a\u0001"+
+		"\u0000\u0000\u0000\u0019\u0016\u0001\u0000\u0000\u0000\u001a\u001b\u0001"+
+		"\u0000\u0000\u0000\u001b\u0019\u0001\u0000\u0000\u0000\u001b\u001c\u0001"+
+		"\u0000\u0000\u0000\u001c\u001d\u0001\u0000\u0000\u0000\u001d\u001e\u0005"+
+		"\u0000\u0000\u0001\u001e\u0001\u0001\u0000\u0000\u0000\u001f$\u0003\u000e"+
+		"\u0007\u0000 $\u0003\u0004\u0002\u0000!$\u0003\u0006\u0003\u0000\"$\u0003"+
+		"\b\u0004\u0000#\u001f\u0001\u0000\u0000\u0000# \u0001\u0000\u0000\u0000"+
 		"#!\u0001\u0000\u0000\u0000#\"\u0001\u0000\u0000\u0000$\u0003\u0001\u0000"+
 		"\u0000\u0000%&\u0005\u0001\u0000\u0000&\'\u0005\t\u0000\u0000\'(\u0003"+
 		"\f\u0006\u0000()\u0005\n\u0000\u0000)1\u0005\u0003\u0000\u0000*.\u0003"+
@@ -899,7 +907,7 @@ public class minecraft_codeParser extends Parser {
 		"Z[\u0007\u0000\u0000\u0000[]\u0003\u0010\b\u0000\\Z\u0001\u0000\u0000"+
 		"\u0000\\]\u0001\u0000\u0000\u0000]\r\u0001\u0000\u0000\u0000^`\u0005\u0014"+
 		"\u0000\u0000_^\u0001\u0000\u0000\u0000_`\u0001\u0000\u0000\u0000`a\u0001"+
-		"\u0000\u0000\u0000ab\u0005\u0015\u0000\u0000be\u0005\u000b\u0000\u0000"+
+		"\u0000\u0000\u0000ab\u0005\u0016\u0000\u0000be\u0005\u000b\u0000\u0000"+
 		"cf\u0003\u0010\b\u0000df\u0003\b\u0004\u0000ec\u0001\u0000\u0000\u0000"+
 		"ed\u0001\u0000\u0000\u0000f\u000f\u0001\u0000\u0000\u0000gl\u0003\u0012"+
 		"\t\u0000hi\u0007\u0001\u0000\u0000ik\u0003\u0012\t\u0000jh\u0001\u0000"+
@@ -908,11 +916,12 @@ public class minecraft_codeParser extends Parser {
 		"\u0000ot\u0003\u0014\n\u0000pq\u0007\u0002\u0000\u0000qs\u0003\u0014\n"+
 		"\u0000rp\u0001\u0000\u0000\u0000sv\u0001\u0000\u0000\u0000tr\u0001\u0000"+
 		"\u0000\u0000tu\u0001\u0000\u0000\u0000u\u0013\u0001\u0000\u0000\u0000"+
-		"vt\u0001\u0000\u0000\u0000w~\u0005\u0012\u0000\u0000x~\u0005\u0015\u0000"+
-		"\u0000yz\u0005\t\u0000\u0000z{\u0003\b\u0004\u0000{|\u0005\n\u0000\u0000"+
-		"|~\u0001\u0000\u0000\u0000}w\u0001\u0000\u0000\u0000}x\u0001\u0000\u0000"+
-		"\u0000}y\u0001\u0000\u0000\u0000~\u0015\u0001\u0000\u0000\u0000\u000e"+
-		"\u001b#.3@ENV\\_elt}";
+		"vt\u0001\u0000\u0000\u0000w\u007f\u0005\u0012\u0000\u0000x\u007f\u0005"+
+		"\u0015\u0000\u0000y\u007f\u0005\u0016\u0000\u0000z{\u0005\t\u0000\u0000"+
+		"{|\u0003\b\u0004\u0000|}\u0005\n\u0000\u0000}\u007f\u0001\u0000\u0000"+
+		"\u0000~w\u0001\u0000\u0000\u0000~x\u0001\u0000\u0000\u0000~y\u0001\u0000"+
+		"\u0000\u0000~z\u0001\u0000\u0000\u0000\u007f\u0015\u0001\u0000\u0000\u0000"+
+		"\u000e\u001b#.3@ENV\\_elt~";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

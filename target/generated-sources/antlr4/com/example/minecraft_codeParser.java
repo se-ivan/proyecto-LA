@@ -20,7 +20,7 @@ public class minecraft_codeParser extends Parser {
 		FORTUNE=1, INFINITY=2, UNBREAKING_START=3, UNBREAKING_END=4, SHARPNESS=5, 
 		MULTISHOT=6, PIERCING=7, EFFICIENCY=8, LURE=9, LUCK_OF_THE_SEA=10, APPLY=11, 
 		LAPIS_LAZULI=12, KNOCKBACK=13, PUNCH=14, MENDING=15, IMPALING=16, CHANNELING=17, 
-		ENT=18, FEATHER_AND_INK=19, BEDROCK=20, BOOK=21, COMMENT=22, WS=23;
+		ENT=18, FEATHER_AND_INK=19, TYPE=20, BOOL=21, BOOK=22, COMMENT=23, WS=24;
 	public static final int
 		RULE_bookshelf = 0, RULE_enchanting = 1, RULE_redstone_logic = 2, RULE_redstone_clock = 3, 
 		RULE_redstone_circuit = 4, RULE_signal_chain = 5, RULE_judgment = 6, RULE_enchant = 7, 
@@ -45,7 +45,7 @@ public class minecraft_codeParser extends Parser {
 			"'\uD83C\uDF00'", "'\uD83D\uDD39'", "'\u00B7\u01C0\u00B7\u30EA\u148D\u152E\u00B7\u01C0\u00B7\u154A\u158B\u152E\u00B7\u01C0\u00B7'", 
 			"'I!\u268D\u30EA\u152E\u2351'", "'\u14B2\u14B7\u30EA\u21B8\u254E\u30EA\u2524'", 
 			"'\u254E\u14B2i!\u158B|:\u254E\u30EA\u2524'", "'\u152E\u2351\u158B\u30EA\u30EA\u14B7|:\u254E\u30EA\u2524'", 
-			null, "'\u268D\u30EA\u152E\u2351'", "'\u154A\u14B7\u21B8\u2237\u148D\u152E\uA58C'"
+			null, "'\u268D\u30EA\u152E\u2351'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -54,7 +54,7 @@ public class minecraft_codeParser extends Parser {
 			null, "FORTUNE", "INFINITY", "UNBREAKING_START", "UNBREAKING_END", "SHARPNESS", 
 			"MULTISHOT", "PIERCING", "EFFICIENCY", "LURE", "LUCK_OF_THE_SEA", "APPLY", 
 			"LAPIS_LAZULI", "KNOCKBACK", "PUNCH", "MENDING", "IMPALING", "CHANNELING", 
-			"ENT", "FEATHER_AND_INK", "BEDROCK", "BOOK", "COMMENT", "WS"
+			"ENT", "FEATHER_AND_INK", "TYPE", "BOOL", "BOOK", "COMMENT", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -161,7 +161,7 @@ public class minecraft_codeParser extends Parser {
 				setState(27); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BEDROCK) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << TYPE) | (1L << BOOL) | (1L << BOOK))) != 0) );
 			setState(29);
 			match(EOF);
 			}
@@ -339,7 +339,7 @@ public class minecraft_codeParser extends Parser {
 				setState(51); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BEDROCK) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << TYPE) | (1L << BOOL) | (1L << BOOK))) != 0) );
 			setState(53);
 			match(UNBREAKING_END);
 			}
@@ -437,7 +437,7 @@ public class minecraft_codeParser extends Parser {
 				setState(69); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << BEDROCK) | (1L << BOOK))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FORTUNE) | (1L << INFINITY) | (1L << LURE) | (1L << ENT) | (1L << TYPE) | (1L << BOOL) | (1L << BOOK))) != 0) );
 			setState(71);
 			match(UNBREAKING_END);
 			}
@@ -669,7 +669,7 @@ public class minecraft_codeParser extends Parser {
 		public Redstone_circuitContext redstone_circuit() {
 			return getRuleContext(Redstone_circuitContext.class,0);
 		}
-		public TerminalNode BEDROCK() { return getToken(minecraft_codeParser.BEDROCK, 0); }
+		public TerminalNode TYPE() { return getToken(minecraft_codeParser.TYPE, 0); }
 		public EnchantContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -699,10 +699,10 @@ public class minecraft_codeParser extends Parser {
 			setState(95);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (_la==BEDROCK) {
+			if (_la==TYPE) {
 				{
 				setState(94);
-				match(BEDROCK);
+				match(TYPE);
 				}
 			}
 
@@ -901,6 +901,7 @@ public class minecraft_codeParser extends Parser {
 
 	public static class Inventory_slotContext extends ParserRuleContext {
 		public TerminalNode ENT() { return getToken(minecraft_codeParser.ENT, 0); }
+		public TerminalNode BOOL() { return getToken(minecraft_codeParser.BOOL, 0); }
 		public TerminalNode BOOK() { return getToken(minecraft_codeParser.BOOK, 0); }
 		public TerminalNode LURE() { return getToken(minecraft_codeParser.LURE, 0); }
 		public Redstone_circuitContext redstone_circuit() {
@@ -930,7 +931,7 @@ public class minecraft_codeParser extends Parser {
 		Inventory_slotContext _localctx = new Inventory_slotContext(_ctx, getState());
 		enterRule(_localctx, 20, RULE_inventory_slot);
 		try {
-			setState(125);
+			setState(126);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ENT:
@@ -940,21 +941,28 @@ public class minecraft_codeParser extends Parser {
 				match(ENT);
 				}
 				break;
-			case BOOK:
+			case BOOL:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(120);
+				match(BOOL);
+				}
+				break;
+			case BOOK:
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(121);
 				match(BOOK);
 				}
 				break;
 			case LURE:
-				enterOuterAlt(_localctx, 3);
+				enterOuterAlt(_localctx, 4);
 				{
-				setState(121);
-				match(LURE);
 				setState(122);
-				redstone_circuit();
+				match(LURE);
 				setState(123);
+				redstone_circuit();
+				setState(124);
 				match(LUCK_OF_THE_SEA);
 				}
 				break;
@@ -974,7 +982,7 @@ public class minecraft_codeParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\31\u0082\4\2\t\2"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\32\u0083\4\2\t\2"+
 		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
 		"\t\13\4\f\t\f\3\2\3\2\3\2\6\2\34\n\2\r\2\16\2\35\3\2\3\2\3\3\3\3\3\3\3"+
 		"\3\5\3&\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4/\n\4\f\4\16\4\62\13\4\6\4"+
@@ -982,31 +990,31 @@ public class minecraft_codeParser extends Parser {
 		"\5D\13\5\6\5F\n\5\r\5\16\5G\3\5\3\5\3\6\3\6\3\6\7\6O\n\6\f\6\16\6R\13"+
 		"\6\3\7\3\7\3\7\7\7W\n\7\f\7\16\7Z\13\7\3\b\3\b\3\b\5\b_\n\b\3\t\5\tb\n"+
 		"\t\3\t\3\t\3\t\3\t\5\th\n\t\3\n\3\n\3\n\7\nm\n\n\f\n\16\np\13\n\3\13\3"+
-		"\13\3\13\7\13u\n\13\f\13\16\13x\13\13\3\f\3\f\3\f\3\f\3\f\3\f\5\f\u0080"+
-		"\n\f\3\f\2\2\r\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\17\21\4\2\7\7\n\n\3"+
-		"\2\b\t\2\u0087\2\33\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b9\3\2\2\2\nK\3\2\2"+
-		"\2\fS\3\2\2\2\16[\3\2\2\2\20a\3\2\2\2\22i\3\2\2\2\24q\3\2\2\2\26\177\3"+
-		"\2\2\2\30\31\5\4\3\2\31\32\7\r\2\2\32\34\3\2\2\2\33\30\3\2\2\2\34\35\3"+
-		"\2\2\2\35\33\3\2\2\2\35\36\3\2\2\2\36\37\3\2\2\2\37 \7\2\2\3 \3\3\2\2"+
-		"\2!&\5\20\t\2\"&\5\6\4\2#&\5\b\5\2$&\5\n\6\2%!\3\2\2\2%\"\3\2\2\2%#\3"+
-		"\2\2\2%$\3\2\2\2&\5\3\2\2\2\'(\7\3\2\2()\7\13\2\2)*\5\16\b\2*+\7\f\2\2"+
-		"+\63\7\5\2\2,\60\5\4\3\2-/\7\16\2\2.-\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2"+
-		"\60\61\3\2\2\2\61\64\3\2\2\2\62\60\3\2\2\2\63,\3\2\2\2\64\65\3\2\2\2\65"+
-		"\63\3\2\2\2\65\66\3\2\2\2\66\67\3\2\2\2\678\7\6\2\28\7\3\2\2\29:\7\4\2"+
-		"\2:;\7\13\2\2;<\5\n\6\2<=\7\f\2\2=E\7\5\2\2>B\5\4\3\2?A\7\16\2\2@?\3\2"+
-		"\2\2AD\3\2\2\2B@\3\2\2\2BC\3\2\2\2CF\3\2\2\2DB\3\2\2\2E>\3\2\2\2FG\3\2"+
-		"\2\2GE\3\2\2\2GH\3\2\2\2HI\3\2\2\2IJ\7\6\2\2J\t\3\2\2\2KP\5\f\7\2LM\7"+
-		"\22\2\2MO\5\f\7\2NL\3\2\2\2OR\3\2\2\2PN\3\2\2\2PQ\3\2\2\2Q\13\3\2\2\2"+
-		"RP\3\2\2\2SX\5\16\b\2TU\7\23\2\2UW\5\16\b\2VT\3\2\2\2WZ\3\2\2\2XV\3\2"+
-		"\2\2XY\3\2\2\2Y\r\3\2\2\2ZX\3\2\2\2[^\5\22\n\2\\]\t\2\2\2]_\5\22\n\2^"+
-		"\\\3\2\2\2^_\3\2\2\2_\17\3\2\2\2`b\7\26\2\2a`\3\2\2\2ab\3\2\2\2bc\3\2"+
-		"\2\2cd\7\27\2\2dg\7\r\2\2eh\5\22\n\2fh\5\n\6\2ge\3\2\2\2gf\3\2\2\2h\21"+
-		"\3\2\2\2in\5\24\13\2jk\t\3\2\2km\5\24\13\2lj\3\2\2\2mp\3\2\2\2nl\3\2\2"+
-		"\2no\3\2\2\2o\23\3\2\2\2pn\3\2\2\2qv\5\26\f\2rs\t\4\2\2su\5\26\f\2tr\3"+
-		"\2\2\2ux\3\2\2\2vt\3\2\2\2vw\3\2\2\2w\25\3\2\2\2xv\3\2\2\2y\u0080\7\24"+
-		"\2\2z\u0080\7\27\2\2{|\7\13\2\2|}\5\n\6\2}~\7\f\2\2~\u0080\3\2\2\2\177"+
-		"y\3\2\2\2\177z\3\2\2\2\177{\3\2\2\2\u0080\27\3\2\2\2\20\35%\60\65BGPX"+
-		"^agnv\177";
+		"\13\3\13\7\13u\n\13\f\13\16\13x\13\13\3\f\3\f\3\f\3\f\3\f\3\f\3\f\5\f"+
+		"\u0081\n\f\3\f\2\2\r\2\4\6\b\n\f\16\20\22\24\26\2\5\3\2\17\21\4\2\7\7"+
+		"\n\n\3\2\b\t\2\u0089\2\33\3\2\2\2\4%\3\2\2\2\6\'\3\2\2\2\b9\3\2\2\2\n"+
+		"K\3\2\2\2\fS\3\2\2\2\16[\3\2\2\2\20a\3\2\2\2\22i\3\2\2\2\24q\3\2\2\2\26"+
+		"\u0080\3\2\2\2\30\31\5\4\3\2\31\32\7\r\2\2\32\34\3\2\2\2\33\30\3\2\2\2"+
+		"\34\35\3\2\2\2\35\33\3\2\2\2\35\36\3\2\2\2\36\37\3\2\2\2\37 \7\2\2\3 "+
+		"\3\3\2\2\2!&\5\20\t\2\"&\5\6\4\2#&\5\b\5\2$&\5\n\6\2%!\3\2\2\2%\"\3\2"+
+		"\2\2%#\3\2\2\2%$\3\2\2\2&\5\3\2\2\2\'(\7\3\2\2()\7\13\2\2)*\5\16\b\2*"+
+		"+\7\f\2\2+\63\7\5\2\2,\60\5\4\3\2-/\7\16\2\2.-\3\2\2\2/\62\3\2\2\2\60"+
+		".\3\2\2\2\60\61\3\2\2\2\61\64\3\2\2\2\62\60\3\2\2\2\63,\3\2\2\2\64\65"+
+		"\3\2\2\2\65\63\3\2\2\2\65\66\3\2\2\2\66\67\3\2\2\2\678\7\6\2\28\7\3\2"+
+		"\2\29:\7\4\2\2:;\7\13\2\2;<\5\n\6\2<=\7\f\2\2=E\7\5\2\2>B\5\4\3\2?A\7"+
+		"\16\2\2@?\3\2\2\2AD\3\2\2\2B@\3\2\2\2BC\3\2\2\2CF\3\2\2\2DB\3\2\2\2E>"+
+		"\3\2\2\2FG\3\2\2\2GE\3\2\2\2GH\3\2\2\2HI\3\2\2\2IJ\7\6\2\2J\t\3\2\2\2"+
+		"KP\5\f\7\2LM\7\22\2\2MO\5\f\7\2NL\3\2\2\2OR\3\2\2\2PN\3\2\2\2PQ\3\2\2"+
+		"\2Q\13\3\2\2\2RP\3\2\2\2SX\5\16\b\2TU\7\23\2\2UW\5\16\b\2VT\3\2\2\2WZ"+
+		"\3\2\2\2XV\3\2\2\2XY\3\2\2\2Y\r\3\2\2\2ZX\3\2\2\2[^\5\22\n\2\\]\t\2\2"+
+		"\2]_\5\22\n\2^\\\3\2\2\2^_\3\2\2\2_\17\3\2\2\2`b\7\26\2\2a`\3\2\2\2ab"+
+		"\3\2\2\2bc\3\2\2\2cd\7\30\2\2dg\7\r\2\2eh\5\22\n\2fh\5\n\6\2ge\3\2\2\2"+
+		"gf\3\2\2\2h\21\3\2\2\2in\5\24\13\2jk\t\3\2\2km\5\24\13\2lj\3\2\2\2mp\3"+
+		"\2\2\2nl\3\2\2\2no\3\2\2\2o\23\3\2\2\2pn\3\2\2\2qv\5\26\f\2rs\t\4\2\2"+
+		"su\5\26\f\2tr\3\2\2\2ux\3\2\2\2vt\3\2\2\2vw\3\2\2\2w\25\3\2\2\2xv\3\2"+
+		"\2\2y\u0081\7\24\2\2z\u0081\7\27\2\2{\u0081\7\30\2\2|}\7\13\2\2}~\5\n"+
+		"\6\2~\177\7\f\2\2\177\u0081\3\2\2\2\u0080y\3\2\2\2\u0080z\3\2\2\2\u0080"+
+		"{\3\2\2\2\u0080|\3\2\2\2\u0081\27\3\2\2\2\20\35%\60\65BGPX^agnv\u0080";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
