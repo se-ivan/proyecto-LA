@@ -43,6 +43,9 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             if (left.type != right.type) {
                 throw new RuntimeException("Error: Los materiales no son compatibles en la rejilla de crafteo.");
             }
+            if (left.type != Symbols.DataType.INT) {
+                throw new RuntimeException("Error semántico: Operaciones aritméticas (+, -) solo permitidas sobre números (INT).");
+            }
             
             Double leftVal = left.value instanceof Double ? (Double) left.value : Double.parseDouble(left.value.toString());
             Double rightVal = right.value instanceof Double ? (Double) right.value : Double.parseDouble(right.value.toString());
@@ -124,6 +127,11 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             Boolean value = ctx.BOOL().getText().equals("ℸ∷⚍ᒷ");
             System.out.println("Valor booleano (BOOL): " + value);
             return new Symbols(Symbols.DataType.BOOLEAN, value);
+        } else if (ctx.STRING_LITERAL() != null) {
+            String text = ctx.STRING_LITERAL().getText();
+            String value = text.substring(1, text.length() - 1); // Remover comillas
+            System.out.println("Valor string (STRING_LITERAL): " + value);
+            return new Symbols(Symbols.DataType.STRING, value);
         } else if (ctx.BOOK() != null) {
             String id = ctx.BOOK().getText();
             if (!tablaSimbolos.containsKey(id)) {
@@ -147,20 +155,29 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             Symbols right = visit(ctx.crafting_recipe(1));
             String op = ctx.getChild(1).getText();
             
-            Double leftVal = left.value instanceof Double ? (Double) left.value : Double.parseDouble(left.value.toString());
-            Double rightVal = right.value instanceof Double ? (Double) right.value : Double.parseDouble(right.value.toString());
+            if (left.type != right.type) {
+                throw new RuntimeException("Error semántico: No se pueden comparar tipos incompatibles.");
+            }
             
             Boolean result = false;
             // PUNCH (>), KNOCKBACK (<), MENDING (==)
-            if (op.equals("I!⚍リᔮ⍑")) {
-                result = leftVal > rightVal;
-                System.out.println("Mayor que (PUNCH): " + leftVal + " > " + rightVal + " = " + result);
-            } else if (op.equals("·ǀ·リᒍᔮ·ǀ·ᕊᖋᔮ·ǀ·")) {
-                result = leftVal < rightVal;
-                System.out.println("Menor que (KNOCKBACK): " + leftVal + " < " + rightVal + " = " + result);
-            } else if (op.equals("ᒲᒷリ↸╎リ┤")) {
-                result = leftVal.equals(rightVal);
-                System.out.println("Igual a (MENDING): " + leftVal + " == " + rightVal + " = " + result);
+            if (op.equals("ᒲᒷリ↸╎リ┤")) { // MENDING (==)
+                result = left.value.equals(right.value);
+                System.out.println("Igual a (MENDING): " + left.value + " == " + right.value + " = " + result);
+            } else {
+                if (left.type != Symbols.DataType.INT) {
+                    throw new RuntimeException("Error semántico: Los comparadores < y > solo pueden usarse con números (INT).");
+                }
+                Double leftVal = left.value instanceof Double ? (Double) left.value : Double.parseDouble(left.value.toString());
+                Double rightVal = right.value instanceof Double ? (Double) right.value : Double.parseDouble(right.value.toString());
+                
+                if (op.equals("I!⚍リᔮ⍑")) {
+                    result = leftVal > rightVal;
+                    System.out.println("Mayor que (PUNCH): " + leftVal + " > " + rightVal + " = " + result);
+                } else if (op.equals("·ǀ·リᒍᔮ·ǀ·ᕊᖋᔮ·ǀ·")) {
+                    result = leftVal < rightVal;
+                    System.out.println("Menor que (KNOCKBACK): " + leftVal + " < " + rightVal + " = " + result);
+                }
             }
             return new Symbols(Symbols.DataType.BOOLEAN, result);
         }
@@ -231,6 +248,9 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             
             if (left.type != right.type) {
                 throw new RuntimeException("Error: Los materiales no son compatibles en la rejilla de crafteo.");
+            }
+            if (left.type != Symbols.DataType.INT) {
+                throw new RuntimeException("Error semántico: Operaciones aritméticas (*, /) solo permitidas sobre números (INT).");
             }
             
             Double leftVal = left.value instanceof Double ? (Double) left.value : Double.parseDouble(left.value.toString());

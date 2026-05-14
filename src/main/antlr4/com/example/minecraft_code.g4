@@ -1,6 +1,6 @@
 grammar minecraft_code;
 
-bookshelf    : (enchanting APPLY)+ EOF ;
+bookshelf    : (enchanting LAPIS_LAZULI*)+ EOF ;
 
 enchanting  : enchant 
             | redstone_logic 
@@ -32,6 +32,7 @@ resource_pile     : inventory_slot ((MULTISHOT | PIERCING) inventory_slot)* ;
 
 inventory_slot      : ENT 
                     | BOOL
+                    | STRING_LITERAL
                     | BOOK 
                     | LURE redstone_circuit LUCK_OF_THE_SEA 
                     ;
@@ -60,6 +61,7 @@ ENT              : [0-9]+ ;
 FEATHER_AND_INK  : '⚍リᔮ⍑' ;               // "var"
 TYPE             : '╎リᒣ' | 'ϟᒣ∷' | 'ᕊᒍᒍ|:' ; // "int" | "str" | "bool"
 BOOL             : 'ℸ∷⚍ᒷ' | '⎓ᖋ|:ϟᒷ' ;       // "true" | "false"
+STRING_LITERAL   : '"' ~["]* '"' ;           // Cadenas de texto
 BOOK             : [a-zA-Zᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|][a-zA-Z0-9ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ!¡ᑑ∷ᓭד̣⚍⍊∴̇/⨅_|]* ; 
 COMMENT          : '//' ~[\r\n]* -> skip ; // Comentarios de una linea
 WS               : [ \t\n\r\f]+ -> skip ;
