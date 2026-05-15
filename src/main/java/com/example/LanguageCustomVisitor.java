@@ -1,4 +1,4 @@
-
+﻿
 package com.example;
 
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -54,10 +54,10 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             // EFFICIENCY = "ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥" (+), SHARPNESS = "Ϟ⍑ᖋ∷i!リᒷϟϟ" (-)
             if (op.equals("ᒷ⎓⎓╎ᔮ╎ᒷリᔮ॥")) {
                 result = leftVal + rightVal;
-                System.out.println("Suma (EFFICIENCY): " + leftVal + " + " + rightVal + " = " + result);
+                System.out.println("[Línea " + ctx.getStart().getLine() + "] Suma (EFFICIENCY): " + leftVal + " + " + rightVal + " = " + result);
             } else if (op.equals("Ϟ⍑ᖋ∷i!リᒷϟϟ")) {
                 result = leftVal - rightVal;
-                System.out.println("Resta (SHARPNESS): " + leftVal + " - " + rightVal + " = " + result);
+                System.out.println("[Línea " + ctx.getStart().getLine() + "] Resta (SHARPNESS): " + leftVal + " - " + rightVal + " = " + result);
             }
             left = new Symbols(Symbols.DataType.INT, result);
         }
@@ -92,7 +92,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             
             Symbols newSym = new Symbols(type, value != null ? value.value : null);
             tablaSimbolos.put(id, newSym);
-            System.out.println("Declaración: '" + id + "' (" + type + ") inicializada con valor: " + newSym.value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Declaración: '" + id + "' (" + type + ") inicializada con valor: " + newSym.value);
             return newSym;
         } else {
             if (!tablaSimbolos.containsKey(id)) {
@@ -103,7 +103,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
                 throw new RuntimeException("Error semántico: Se esperaba un valor de tipo " + registered.type);
             }
             registered.value = value != null ? value.value : null;
-            System.out.println("Asignación (APPLY): Variable '" + id + "' guardada con valor: " + registered.value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Asignación (APPLY): Variable '" + id + "' guardada con valor: " + registered.value);
             return registered;
         }
     }
@@ -121,16 +121,16 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
     public Symbols visitInventory_slot(Inventory_slotContext ctx) {
         if (ctx.ENT() != null) {
             Double value = Double.parseDouble(ctx.ENT().getText());
-            System.out.println("Valor numérico (ENT): " + value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Valor numérico (ENT): " + value);
             return new Symbols(Symbols.DataType.INT, value);
         } else if (ctx.BOOL() != null) {
             Boolean value = ctx.BOOL().getText().equals("ℸ∷⚍ᒷ");
-            System.out.println("Valor booleano (BOOL): " + value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Valor booleano (BOOL): " + value);
             return new Symbols(Symbols.DataType.BOOLEAN, value);
         } else if (ctx.STRING_LITERAL() != null) {
             String text = ctx.STRING_LITERAL().getText();
             String value = text.substring(1, text.length() - 1); // Remover comillas
-            System.out.println("Valor string (STRING_LITERAL): " + value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Valor string (STRING_LITERAL): " + value);
             return new Symbols(Symbols.DataType.STRING, value);
         } else if (ctx.BOOK() != null) {
             String id = ctx.BOOK().getText();
@@ -138,10 +138,10 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
                 throw new RuntimeException("Error: El ítem [" + id + "] no ha sido encantado todavía.");
             }
             Symbols sym = tablaSimbolos.get(id);
-            System.out.println("Variable (BOOK) '" + id + "' leída con valor: " + sym.value);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Variable (BOOK) '" + id + "' leída con valor: " + sym.value);
             return sym;
         } else if (ctx.redstone_circuit() != null) {
-            System.out.println("Evaluando expresión entre paréntesis...");
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] Evaluando expresión entre paréntesis...");
             return visit(ctx.redstone_circuit());
         }
         return null;
@@ -163,7 +163,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             // PUNCH (>), KNOCKBACK (<), MENDING (==)
             if (op.equals("ᒲᒷリ↸╎リ┤")) { // MENDING (==)
                 result = left.value.equals(right.value);
-                System.out.println("Igual a (MENDING): " + left.value + " == " + right.value + " = " + result);
+                System.out.println("[Línea " + ctx.getStart().getLine() + "] Igual a (MENDING): " + left.value + " == " + right.value + " = " + result);
             } else {
                 if (left.type != Symbols.DataType.INT) {
                     throw new RuntimeException("Error semántico: Los comparadores < y > solo pueden usarse con números (INT).");
@@ -173,10 +173,10 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
                 
                 if (op.equals("I!⚍リᔮ⍑")) {
                     result = leftVal > rightVal;
-                    System.out.println("Mayor que (PUNCH): " + leftVal + " > " + rightVal + " = " + result);
+                    System.out.println("[Línea " + ctx.getStart().getLine() + "] Mayor que (PUNCH): " + leftVal + " > " + rightVal + " = " + result);
                 } else if (op.equals("·ǀ·リᒍᔮ·ǀ·ᕊᖋᔮ·ǀ·")) {
                     result = leftVal < rightVal;
-                    System.out.println("Menor que (KNOCKBACK): " + leftVal + " < " + rightVal + " = " + result);
+                    System.out.println("[Línea " + ctx.getStart().getLine() + "] Menor que (KNOCKBACK): " + leftVal + " < " + rightVal + " = " + result);
                 }
             }
             return new Symbols(Symbols.DataType.BOOLEAN, result);
@@ -196,7 +196,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             
             // IMPALING (||)
             Boolean result = leftVal || rightVal;
-            System.out.println("OR (IMPALING): " + leftVal + " || " + rightVal + " = " + result);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] OR (IMPALING): " + leftVal + " || " + rightVal + " = " + result);
             left = new Symbols(Symbols.DataType.BOOLEAN, result);
         }
         return left;
@@ -260,13 +260,13 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             // MULTISHOT = "ᒲ⚍|:ᒣ╎ϟ⍑ᒍᒣ" (*), PIERCING = "I!╎ᒷ∷ᔮ╎リ┤" (/)
             if (op.equals("ᒲ⚍|:ᒣ╎ϟ⍑ᒍᒣ")) {
                 result = leftVal * rightVal;
-                System.out.println("Multiplicación (MULTISHOT): " + leftVal + " * " + rightVal + " = " + result);
+                System.out.println("[Línea " + ctx.getStart().getLine() + "] Multiplicación (MULTISHOT): " + leftVal + " * " + rightVal + " = " + result);
             } else if (op.equals("I!╎ᒷ∷ᔮ╎リ┤")) {
                 if (rightVal == 0.0) {
                     throw new RuntimeException("Error: Intentó atravesar el vacío (división por cero no permitida).");
                 }
                 result = leftVal / rightVal;
-                System.out.println("División (PIERCING): " + leftVal + " / " + rightVal + " = " + result);
+                System.out.println("[Línea " + ctx.getStart().getLine() + "] División (PIERCING): " + leftVal + " / " + rightVal + " = " + result);
             }
             left = new Symbols(Symbols.DataType.INT, result);
         }
@@ -285,7 +285,7 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
             
             // CHANNELING (&&)
             Boolean result = leftVal && rightVal;
-            System.out.println("AND (CHANNELING): " + leftVal + " && " + rightVal + " = " + result);
+            System.out.println("[Línea " + ctx.getStart().getLine() + "] AND (CHANNELING): " + leftVal + " && " + rightVal + " = " + result);
             left = new Symbols(Symbols.DataType.BOOLEAN, result);
         }
         return left;
@@ -318,3 +318,4 @@ public class LanguageCustomVisitor extends minecraft_codeBaseVisitor<Symbols> {
 
 
 }
+
